@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Brockway Street | Home</title>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/scrolla.jquery.js"></script>
+    <script src="https://use.fontawesome.com/092bc38e87.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel = "stylesheet" href = "style/style.css" />
+    <link rel="stylesheet" href="style/swiper.min.css" />
+    <link rel = "stylesheet" href = "style/animate.css" />
+    <link rel="icon" href="images/logo.ico" />
+    <script>
+        $('.animate').scrolla();
+    </script>
+ <style>
+    .full-container
+    {
+        position: relative;
+        text-align: left;
+        left:0;
+        right:0;
+        width:100vw;
+        height:100vh;
+    }
+    
+    .placeholder-logo
+    {
+        margin-top:20px;
+        display: inline-block;
+        position: relative;
+        width:55px;
+        height:55px;
+        margin-left:20px;
+    }
+
+    .placeholder-logo-text
+    {
+        overflow-y:hidden !important;
+        border: 2px solid #000;
+        text-align: center;
+        width:350px;
+        height:85px;
+        font-size:27px;
+        letter-spacing: 1.4px;
+        line-height:85px;
+        transition: background-color .6s, color .6s; 
+        position:absolute; 
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+    }
+
+    .placeholder-logo-text-mobile
+    {
+        overflow-y:hidden !important;
+        border: 2px solid #000;
+        text-align: center;
+        width:300px;
+        height:85px;
+        font-size:27px;
+        letter-spacing: 1.4px;
+        line-height:85px;
+        transition: background-color .6s, color .6s; 
+        position:relative; 
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:35px;
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+    }
+
+    .placeholder-logo-text-mobile:hover
+    {
+        cursor:pointer;
+        background-color:#000;
+        color:#fff;
+    }
+
+    .placeholder-logo-text:hover
+    {
+        cursor:pointer;
+        background-color:#000;
+        color:#fff;
+    }
+
+    .survey-text-mobile
+    {
+        display: block;
+        margin-top:30px;
+        width:300px;
+        position: relative;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        font-size:16px;
+    }
+
+    .placeholder-logo-beneath
+    {
+        text-align: center;
+        width:470px;
+        height:55px;
+        font-size:20px;
+        line-height:55px;
+        transition: background-color .6s, color .6s; 
+         position:absolute; 
+        left:0; right:0;
+        top:128px; bottom:0;
+        margin:auto;
+
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+    }
+
+    .placeholder-logo-beneath-mobile
+    {
+        position: relative;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        margin-top:10px;
+        font-size:20px;
+    }
+
+    .survey-link
+    {
+        text-align: center;
+        width:470px;
+        height:55px;
+        font-size:20px;
+        line-height:55px;
+        font-size:18px;
+         position:absolute; 
+        left:0; right:0;
+        top:308px; bottom:0;
+        margin:auto;
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+    }
+
+
+    .small-bottom-margin
+    {
+        margin-bottom:-5px;
+    }
+
+    .thin-gray-bar
+    {
+        background-color: #808080;
+        height:1px;
+    }
+
+    .position-input
+    {
+        text-align: center;
+        width:300px;
+        height:300px;
+        position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:450px; bottom:0;
+        margin:auto;
+
+        /*this to solve "the content will not be cut when the window is smaller than the content": */
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
+    }
+
+    .placeholder-bottom-bar
+    {
+        position: absolute;
+        bottom:0;
+        height:155px;
+        width:100vw;
+    }
+
+    .position-icons
+    {
+        position: absolute;
+        bottom:30px;
+        left:0;
+        right:0;
+        margin-right:auto;
+        margin-left:auto;
+    }
+
+    .position-email
+    {
+        position: absolute;
+        bottom:10px;
+        left:0;
+        right:0;
+        margin-right:auto;
+        margin-left:auto;
+    }
+
+    .social-media-icon
+    {
+        font-size:24px;
+        color: #000;
+        transition: color .3s;
+    }
+
+    .social-media-icon:hover
+    {
+        color: #3E3E3E;
+    }
+
+    .kill-link-style
+    {
+        color: #000;
+        text-decoration: none; /* no underline */
+    }
+
+    .coming-soon
+    {
+        display: inline-block;
+        font-weight: bold;
+        position: relative;
+        top:13px;
+        left:5px;
+        font-size:23px;
+        background-color:#000;
+        color:#fff;
+        padding:5px 5px 5px 5px;
+        letter-spacing: 1.3px;
+    }
+
+    .coming-soon:hover
+    {
+        cursor:default !important; 
+    }
+
+    .placeholder-mobile-footer
+    {
+        position: relative;
+        bottom:0;
+        height:165px;
+        width:100vw;
+    }
+
+    .center-rel
+    {
+        position: relative;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+    }
+
+    .push-up
+    {
+        margin-top:-10px;
+    }
+
+    .margin-top-med
+    {
+        margin-top:8px;
+    }
+    
+    </style>
+  </head>
+  <body class = "animated fadeIn">
+    <div class = "full-container">
+        <div class = "hidden-sm-down col col-12">
+            <img class = "placeholder-logo" src = "images/logo.png" />
+            <div class = "coming-soon">Coming Soon</div>
+        </div>
+
+        <div class = "hidden-md-up col col-12 text-center">
+            <img class = "placeholder-logo" src = "images/logo.png" />
+            <div class = "coming-soon">Coming Soon</div>
+        </div>
+
+        <div class = "hidden-md-up">
+            <div onClick = "openSurvey()" on-tap = "openSurvey()" class = "animated fadeInDown placeholder-logo-text-mobile">brockway street</div>
+            <div class = "animated fadeInUp placeholder-logo-beneath-mobile">Re-inventing streetwear with affordable goods</div>
+            <a href = "https://docs.google.com/forms/d/1ez6bEiy0iQqA0itcTUYhqT29wAkGX6IMUDbmMJe3Ylg" target = "_blank" class = "animated fadeIn survey-text-mobile">Take a quick survey for a discount on launch</a>
+            <br />
+            <br />
+            <div class = "placeholder-mobile-footer">
+                <div class = "col col-8 col-centered thin-gray-bar"></div>
+                <div class = "center-rel col-11 col-centered margin-top">Sign up for a discount code and special deals when we launch</div>
+                <div class = "center-rel push-up">
+                   <form action="https://formspree.io/info@brockwaystreet.com">
+                                                      <span class="input input--hideo">
+					           <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />
+					           <label class="input__label input__label--hideo" for="input-42">
+                                   <button type="submit" style="background:none; border:none;padding:0"><i class="fa fa-fw fa fa-envelope icon icon--hideo"></i></button>
+						<span class="input__label-content input__label-content--hideo">Email</span>
+					</label>
+				</span>
+                        </form>
+                </div>
+
+                <div class = "rel-center col col-12 margin-top-med text-center">
+                    <a class = "kill-link-style" href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <span class = "pad-right"></span>
+                    <a class = "kill-link-style" href = "https://twitter.com/brockway_street" target = "_blank"><i class="social-media-icon fa fa-twitter" aria-hidden="true"></i></a>
+                    <span class = "pad-right"></span>
+                    <a class = "kill-link-style" href = "https://www.instagram.com/brockwaystreet/" target = "_blank"><i class="social-media-icon fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+
+                <div class= "col col-12 text-center rel-center">
+                   <a class = "kill-link-style" href="mailto:info@brockwaystreet.com"> info@brockwaystreet.com</a>
+                </div>
+            </div>
+        </div>
+        <div class = "hidden-sm-down">
+            <div onclick = "openSurvey()" on-tap = "openSurvey()" class = "animated fadeInDown placeholder-logo-text">brockway street</div>
+            <div class = "animated fadeInUp placeholder-logo-beneath">Re-inventing streetwear with affordable goods</div>
+            <a href = "https://docs.google.com/forms/d/1ez6bEiy0iQqA0itcTUYhqT29wAkGX6IMUDbmMJe3Ylg" class = "animated fadeIn survey-link" target = "_blank">Take a quick survey for a discount on launch</a>
+
+            <!--<div class = "animated fadeIn survey-button">HELP US REINVENT STREET WEAR</div>-->
+            <!--<div class = "animated fadeInUp placeholder-logo-beneath">Re-inventing streetwear with affordable goods</div>-->
+
+            <div class = "placeholder-bottom-bar">
+                <div class = "col col-md-6 col-centered thin-gray-bar text-center">
+                </div>
+                <div class = "col col-10 col-centered text-center">
+                <div class = "adjust-mailing-lists mobile-adjust-mailing-list inline margin-top">
+                        <div class = "col col-12 small-bottom-margin">Sign up for a discount code and special deals when we launch</div>
+                        <form action="https://formspree.io/info@brockwaystreet.com">
+                            <input name = "email" placeholder="Enter email here" type = "text" class = "search-element mail" />
+                            <input name= "submit" type = "submit" value="&nbsp;" class = "search-element-send" />
+                        </form>
+                    </div>
+                    </div>
+                <div class = "position-icons col col-12 text-center">
+                    <a class = "kill-link-style" href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <span class = "pad-right"></span>
+                    <a class = "kill-link-style" href = "https://twitter.com/brockway_street" target = "_blank"><i class="social-media-icon fa fa-twitter" aria-hidden="true"></i></a>
+                    <span class = "pad-right"></span>
+                    <a class = "kill-link-style" href = "https://www.instagram.com/brockwaystreet/" target = "_blank"><i class="social-media-icon fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+
+                <div class = "position-email col col-12 text-center">
+                    <a class = "kill-link-style" href="mailto:info@brockwaystreet.com"> info@brockwaystreet.com</a>
+                </span>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function openSurvey()
+        {
+            window.open("https://docs.google.com/forms/d/1ez6bEiy0iQqA0itcTUYhqT29wAkGX6IMUDbmMJe3Ylg")
+        }
+    </script>
+  </body>
+</html>

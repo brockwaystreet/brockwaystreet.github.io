@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Brockway Street | Home</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel = "stylesheet" href = "style/style.css" />
+    <link rel="stylesheet" href="style/swiper.min.css" />
+    <link rel = "stylesheet" href = "style/animate.css" />
+    <link rel="icon" href="images/logo.ico" />
+ <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    
+    </style>
+  </head>
+  <body>
+      <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
+          <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
+          <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
+          <div class = "inline">
+            <input placeholder="Enter email here" type = "text" class = "search-element mail" />
+            <span class = "search-element-send"></span>
+          </div>
+        </div>
+    <div id = "marginPush" class = "margin-top-push"></div>
+    
+    <!-- Mobile Header --> 
+    <div class = "hidden-lg-up">
+        <nav class="full-width navbar navbar-mobile navbar-toggleable-md navbar-light bg-faded margin-bottom-large">
+<span class = "move-up-large">
+  <button class="move-left navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="move-right navbar-brand" href="#">
+        <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span class = "site-title site-title-small">Brockway Street</span>
+    </a>
+</span>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <br />
+      <span class = "center-nav-items">
+
+            <span class = "site-subtitle site-subtitle-mobile">
+               <span class = "line line-small margin-right"></span> Hats, Owls, and Good Prices <span class = "line line-small margin-left"></span>
+            </span>
+            <li class="nav-item-mobile active">
+                <a class="nav-link nav-link-mobile" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <br />
+            <li class="nav-item-mobile">
+                <a class="nav-link nav-link-mobile" href="#">STORE</a>
+            </li>
+            <br />
+            <li class="nav-item-mobile">
+                <a class="nav-link nav-link-mobile" href="#">ABOUT</a>
+            </li>
+            <br />
+            <li class="nav-item-mobile">
+                <a class="nav-link nav-link-mobile" href="#">CONTACT</a>
+            </li>
+        </span>
+    </ul>
+  </div>
+</nav>
+    </div>
+
+
+
+
+
+    <!-- Desktop Header --> 
+    <div class = "hidden-md-down">
+        <div class = "col col-12 text-center"> 
+            <a href = "index.html"><img src = "images/logo.png" class = "header-logo"/></a>
+        </div>
+        <nav id = "header-move" class="row col-centered navbar navbar-toggleable-md navbar-light">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="col col-12 navbar-nav text-center">
+            <span class = "col col-12 nav-item-wrapper">
+            
+            <li class="nav-item">
+                <div class = "nav-item-wrap">
+                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </div>
+            </li>
+            
+            <li class="nav-item">
+                <div class = "nav-item-wrap">
+                    <a class="nav-link" href="store.html">STORE</a>
+                </div>
+            </li>
+            <li class="nav-item nav-item-big">
+                <span class="nav-link site-title" onclick = "goHome()" onTap= "goHome()">BROCKWAY STREET</span>
+            </li>
+            <li class="nav-item">
+                <div class = "nav-item-wrap">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class = "nav-item-wrap">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </div>
+            </li>
+            
+            <div class = "site-subtitle">
+                <span class = "line margin-right hidden-sm-down"></span>Hats, owls, and good prices<span class = "line margin-left hidden-sm-down"></span> 
+            </span>
+        </ul>
+    </div>
+    </nav>
+</div>
+<div class="col col-11 col-centered swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-image" style = "background-color:gray">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+    
+        <div class="swiper-pagination"></div>
+     
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+   
+    <br />
+    <div class = "col col-10 col-centered margin-top category-container-header">
+        <span class = "line margin-right hidden-xs-down"></span>
+        <span class = "line line-small margin-right hidden-sm-up"></span>
+        OUR CATALOG
+        <span class = "line margin-left hidden-xs-down"></span>
+        <span class = "line line-small margin-left hidden-sm-up"></span>
+    </div>
+    <div class="btn-group btn-group-justified center-btn-group text-center" role="group" aria-label="...">
+            <div class = "margin-auto margin-top">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn no-right-line btn-default">Featured</button>
+                </div>
+                <div class="btn-group no-rad" role="group">
+                    <button type="button" class="btn big-index no-rad btn-default">New</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn no-left-line btn-default">Sales</button>
+                </div>
+            </div>
+        </div>
+   
+     <br />
+
+     <div class = "row col col-11 col-centered margin-top margin-bottom" style = "max-width:1200px;">
+         <div class = "col col-12 col-md-4 margin-none text-center">
+            <span class = "item-box">
+              <div class = "item-button-wrapper">
+                <div class = "item-button push-right">Add to Cart</div>
+                <div class = "item-button">More Info</div>
+              </div>
+              <div class = "item-header">9.99</div>
+              <div class = "item-footer-line"></div>
+              <div class = "item-footer">Funky Fresh Hat</div>
+              
+            </span>
+        </div>
+         <div class = "col col-12 col-md-4 margin-none text-center">
+            <span class = "item-box">
+              <div class = "item-button-wrapper">
+                <div class = "item-button push-right">Add to Cart</div>
+                <div class = "item-button">More Info</div>
+              </div>
+              <div class = "item-header">9.99</div>
+              <div class = "item-footer-line"></div>
+              <div class = "item-footer">Funky Fresh Hat</div>
+              
+            </span>
+        </div>
+         <div class = "col col-12 col-md-4 margin-none text-center">
+            <span class = "item-box">
+              <div class = "item-button-wrapper">
+                <div class = "item-button push-right">Add to Cart</div>
+                <div class = "item-button">More Info</div>
+              </div>
+              <div class = "item-header">9.99</div>
+              <div class = "item-footer-line"></div>
+              <div class = "item-footer">Funky Fresh Hat</div>
+              
+            </span>
+        </div>
+    </div>
+
+    <div class = "row col col-11 col-centered margin-top margin-bottom" style = "max-width:1200px;">
+        <div class = "col col-12 col-md-4 margin-none text-center">
+            <span class = "item-box">
+              <div class = "item-button-wrapper">
+                <div class = "item-button push-right">Add to Cart</div>
+                <div class = "item-button">More Info</div>
+              </div>
+              <div class = "item-header">9.99</div>
+              <div class = "item-footer-line"></div>
+              <div class = "item-footer">Funky Fresh Hat</div>
+              
+            </span>
+        </div>
+         <div class = "col col-12 col-md-4 margin-none text-center">
+            <span class = "item-box">
+              <div class = "item-button-wrapper">
+                <div class = "item-button push-right">Add to Cart</div>
+                <div class = "item-button">More Info</div>
+              </div>
+              <div class = "item-header">9.99</div>
+              <div class = "item-footer-line"></div>
+              <div class = "item-footer">Funky Fresh Hat</div>
+              
+            </span>
+        </div>
+         <div class = "col col-12 col-md-4 margin-none text-center">
+            <span class = "item-box">
+              <div class = "item-button-wrapper">
+                <div class = "item-button push-right">Add to Cart</div>
+                <div class = "item-button">More Info</div>
+              </div>
+              <div class = "item-header">9.99</div>
+              <div class = "item-footer-line"></div>
+              <div class = "item-footer">Funky Fresh Hat</div>
+              
+            </span>
+        </div>
+    </div>
+
+    <div class = "col col-12 footer text-center">
+
+        <span class = "move-up">
+        <div class = "pad-row">
+            <div class = "col col-12 col-sm-6 footer-item-container">
+
+                <!-- Mobile Footer -->
+                <div class = "hidden-sm-up footer-item-line text-center">
+                    <div class = "footer-item">Store</div>
+                    <div class = "footer-item mobile-footer-item">About Us</div>
+                    <div class = "footer-item mobile-footer-item">Terms</div>
+                    <div class = "footer-item mobile-footer-item">eukim</div>
+                    <div class = "footer-item mobile-footer-item">Get Bent</div>
+                </div>
+
+                <span class = "row hidden-md-up footer-item-line">
+                    <span class = "center-block" style = "background-co">
+                        <a href = "index.html" class = "no-underline">
+                            <img src = "images/twitter.png" class = "social-icon" />
+                        </a>
+                        <a href = "index.html" class = "no-underline">
+                            <img src = "images/twitter.png" class = "social-icon" />
+                        </a>
+                        <a href = "index.html" class = "no-underline">
+                            <img src = "images/twitter.png" class = "social-icon" />
+                        </a>
+                    </span>
+                </span>
+
+                <!-- Desktop Footer -->
+                <span class = "hidden-sm-down">
+                    <span class = "row footer-item-line">
+                        <span class = "footer-item">Store <span class = "slash">/</span></span>
+                        <span class = "footer-item">About Us <span class = "slash">/</span></span>
+                        <span class = "footer-item">Terms <span class = "slash">/</span></span>
+                        <span class = "footer-item">eukim <span class = "slash">/</span></span>
+                        <span class = "footer-item">Get Bent</span>
+                    </span>
+                </span>
+
+                <span class = "small-margin-top"></span>
+
+                <span class = "row hidden-sm-down footer-item-line">
+                    <a href = "index.html" class = "no-underline">
+                        <img src = "images/twitter.png" class = "social-icon" />
+                    </a>
+                    <a href = "index.html" class = "no-underline">
+                        <img src = "images/twitter.png" class = "social-icon" />
+                    </a>
+                    <a href = "index.html" class = "no-underline">
+                        <img src = "images/twitter.png" class = "social-icon" />
+                    </a>
+                </span>
+                <span class = "small-margin-top"></span>
+                <span class = "row footer-item-line">
+                <span class = "charity-box">
+                        A portion of all proceeds is donated to charity. Click here to learn more. 
+                </span>
+                
+                </span>
+            </div>
+           <div class = "col col-12 hidden-sm-down col-sm-6 footer-item-container">
+                <span class = "row footer-item-line text-right float-right">
+                    <span class = "table">
+                        <div class = "mailing-list-header">Sign up for discount codes and occasional updates.</div>
+                        <div class = "adjust-mailing-list inline">
+                            <input placeholder="Enter email here" type = "text" class = "search-element mail" />
+                            <span class = "search-element-send"></span>
+                        </div>
+                    </span>
+                </span>
+            </div>
+
+            <div class = "col col-12 hidden-sm-up col-sm-6 footer-item-container">
+                <span class = "row footer-item-line text-center margin-top-small float-right">
+                    <span class = "table">
+                        <div class = "mailing-list-header">Sign up for discount codes and occasional updates.</div>
+                        <div class = "adjust-mailing-list inline">
+                            <input placeholder="Enter email here" type = "text" class = "search-element mail" />
+                            <span class = "search-element-send"></span>
+                        </div>
+                    </span>
+                </span>
+            </div>
+            </span>
+            </span>
+        </div>
+    </div>
+
+<!--
+    <div class = "col col-12 footer text-center">
+        <span class = "position-icon">
+            <a href = "index.html" class = "no-underline"> <img class = "col-xs-12 capitol-size footer-icon" src = "images/star.png" /> </a>
+        </span>
+        <br />
+
+        <div class = "row move-up-large">
+            <div class = "col col-12 col-md-4 margin-bottom category-box">
+                <span class = "category-header">Shop</span>
+                <div class = "category-item">View Store</div>
+                <div class = "category-item">View Deals</div>
+                <div class = "category-item">Fk u </div>
+            </div>
+
+            <div class = "col col-12 col-md-4 margin-bottom category-box">
+                <span class = "category-header">Contact</span>
+                <div class = "category-item">About Us</div>
+                <div class = "category-item">Nominate</div>
+                <div class = "category-item">Feedback</div>
+            </div>
+
+            <div class = "col col-12 col-md-3 margin-bottom category-box">
+                <span class = "category-header">Our Team</span>
+                <div class = "category-item">About Us</div>
+                <div class = "category-item">Contact Us</div>
+                <div class = "category-item">Feedback</div>
+            </div>
+        </div>
+    </div>
+    -->
+<!--
+     <div class = "row footer-container" style = "text-align:center;">
+                <span class = "position-capitol">
+                   <a href = "index.html"> <img class = "col-xs-12 capitol-size" src = "img/capitol.png" /> </a>
+                </span>
+
+                <span class = "col col-12 col-md-4 section-push-down">
+                    <span class = "category-header">Contact</span>
+                    <div class = "category-item">About Us</div>
+                    <div class = "category-item">Nominate</div>
+                    <div class = "category-item">Feedback</div>
+                </span>
+
+                 <span class = "col col-12 col-md-4 section-push-down">
+                    <span class = "category-header">Action</span>
+                    <div class = "category-item">Candidates</div>
+                    <div class = "category-item">Charities</div>
+                    <div class = "category-item">Issues</div>
+                </span>
+
+                 <span class = "col col-12 col-md-4 section-push-down">
+                    <span class = "category-header">Contact</span>
+                    <div class = "category-item">About Us</div>
+                    <div class = "category-item">Nominate</div>
+                    <div class = "category-item">Feedback</div>
+                </span>
+
+                <span class = "col col-12 bottom-footer-link">Designed by <a class = "link" href = "http://zacharyjordan.github.io/" target = "_blank">Topbox Software</a></span>
+            </div>
+            -->
+    <!--
+    <div id = "footer" class = "col col-12 col-centered"> 
+        
+        <span id = "footer_links" class="text-muted">Shop</span><span id = "footer_links" class="text-muted">Instagram</span><span id = "footer_links" class="text-muted">KillMe</span><span id = "footer_links" class="text-muted">KillMe</span><span id = "footer_links" class="text-muted">KillMe</span><span id = "footer_links" class="text-muted">KillMe</span>
+        
+        <br />
+        
+        <div id = "mail_list_button" class = "item-button" style="text-align:center;">Join Our Mailing List</div>
+        
+        <img id = "footer_pics" src = "images/twitter.png" width="40" /><img id = "footer_pics" src = "images/twitter.png" width="40" /><img id = "footer_pics" src = "images/twitter.png" width="40" /><img id = "footer_pics" src = "images/twitter.png" width="40" /><img id = "footer_pics" src = "images/twitter.png" width="40" />
+        
+        <br />
+        
+        <span id = "footer_links" class="text-muted" style="font-size:10px;">Social Compliance</span><span  style="font-size:10px;" id = "footer_links" class="text-muted">Terms</span><span  style="font-size:10px;" id = "footer_links" class="text-muted">Privacy Policy</span>
+        
+        <br />
+        
+        <span id = "footer_links" class="text-muted" style="font-size:10px;color:grey;">Site made by: TopBox Software</span>
+  
+    </div>
+    -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+    <script src="scripts/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src = "scripts/script.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+     <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 0,
+        loop: true
+    });
+
+$('.close').click(function() {
+    if (!$(this).hasClass('disabled')) {
+        $('#fill').css('-webkit-animation', 'fadeOut 500ms');
+        $('#fill').bind('webkitAnimationEnd',function(){
+            $('#fill').remove();
+            $('.show, .hide').toggleClass('disabled');
+        });
+    }
+});
+    </script>
+
+  </body>
+</html>
