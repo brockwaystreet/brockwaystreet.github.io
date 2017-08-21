@@ -2262,6 +2262,11 @@ and (max-device-width : 1024px)
     {
         font-size:20px;
     }
+
+    .site-title-small
+    {
+        font-size:15px !important;
+    }
 }
 
 
