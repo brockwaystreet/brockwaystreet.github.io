@@ -6,6 +6,13 @@ body
     /*background-color:#1F618D!important;*/
 }
 
+html, body {
+    height:100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    position:relative;
+}
+
 a:visited 
 {
     color:#000;
@@ -337,7 +344,14 @@ button:focus {
 .social-media-icon-small
 {
     font-size:20px;
+}
 
+.social-media-icon-large
+{
+    position: relative;
+    top:3px;
+    margin-right:3px;
+    font-size:23px;
 }
 
 .center-instagram-feed
@@ -1782,6 +1796,29 @@ a:hover:before {
     position: relative;
     top:25px;
     font-size:16px;
+}
+
+.fb-marketplace
+{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:45px;
+    height:65px;
+    max-width:305px;
+    line-height:65px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+    color:#fff;
+    background-color:#4862a3;
+    transition: background-color .3s;
+}
+
+.fb-marketplace:hover
+{
+    cursor:pointer;
+    background-color:#3F558E;
 }
 
 .mailing-list-footer
