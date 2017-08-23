@@ -47,6 +47,11 @@ a:visited
     background-color:red !important;
 }
 
+.blue
+{
+    background-color: blue !important;
+}
+
 .divider-image-text
 {
     font-weight: 800;
@@ -1582,7 +1587,7 @@ button:focus {
 
 .owl
 {
-    display: inline-block;
+    display: inline-block !important;
     border-radius:7px;
     height:285px;
     width:335px;
@@ -2295,7 +2300,7 @@ and (max-device-width : 1024px)
 }
 
 @media only screen and (max-width: 505px) {
- .divider-image-text
+    .divider-image-text
     {
         font-size:20px;
     }
@@ -2303,6 +2308,19 @@ and (max-device-width : 1024px)
     .site-title-small
     {
         font-size:15px !important;
+    }
+
+    .owl
+    {
+        height:205px !important;
+        width:255px !important;
+    }
+    
+    .team-member
+    {
+        border: 25px solid #f27c6e;
+        height:230px;
+        width:230px;
     }
 }
 
