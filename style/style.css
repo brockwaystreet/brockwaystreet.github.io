@@ -57,16 +57,17 @@ a:visited
     font-weight: 800;
     font-size:50px;
     letter-spacing: 8px;
-    line-height: 55vh;
+    
     color:#fff;
 }
 
 .center-vertical
 {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
+     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right:0px !important;
+}   
 
 .divider-image-button
 {
@@ -249,7 +250,7 @@ button:focus {
 .text-unit
 {
     margin-top:15px;
-    font-size:16px;
+    font-size:17px;
 }
 
 .no-pad
@@ -266,6 +267,9 @@ button:focus {
 .divider-image
 {
     height:55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:gray;
     background-size:cover;
     background-image: url(../images/chicago.jpg);
@@ -414,6 +418,7 @@ button:focus {
     padding:10px;
     border: 3px solid #7f7f7f;
     display: inline-block;
+    border-radius: 3px;
     margin-bottom:10px;
     transition: box-shadow .3s, border .3s;
 }
@@ -1965,6 +1970,13 @@ a:hover:before {
 	user-select: none;
 }
 
+.email-link
+{
+    position:relative;
+    top:7px;
+    font-size:16px !important;
+}
+
 .input__label-content {
 	position: relative;
 	display: block;
@@ -2123,132 +2135,6 @@ a:hover:before {
 
 /* Responsive Code */
 
-/*
-@media only screen and (max-device-width: 768px)
-{ 
-    body
-    {
-        background-color:green !important;
-    }
-}
-*/
-
-/*
-@media only screen  
-and (min-device-width : 336px) 
-and (max-device-width : 736px) 
-and (orientation : portrait) 
-{
-    .item-box
-    {
-         width:325px !important;
-         height:255px;
-    }
-
-    .item-button
-    {
-        width:145px;
-        padding:5px 5px 5px 5px;
-    }
-}
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) 
-{ 
-    .item-box
-    { 
-        width:235px;
-        height:235px;
-    }
-
-    .item-button
-    {
-        width:100px;
-        padding:5px 5px 5px 5px;
-    }
-}
-
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : portrait)
-{ 
-    .site-title-small
-    {
-        margin-left:2px;
-        font-size:25px !important;
-    } 
-
-    .move-right
-    {
-        left: 5px !important;
-    }
-
-    .move-left
-    {
-         margin-right:5px !important;
-    }
-}
-
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px)
-{
-    .site-title-small
-    {
-        font-size:15px !important;
-        margin-left:-1px;
-    }
-
-    .move-right
-    {
-        left: 3px !important;
-    }
-
-    .move-left
-    {
-         margin-right:3px !important;
-    }
-
-    .line-small
-    {
-        width:20px !important;
-    }
-
-    .mobile-subtitle-title
-    {
-        font-size:15px;
-    }
-}
-
-
-@media only screen 
-and (max-device-width : 1024px) 
-{
-     .site-title-small
-     {
-        position: relative;
-        top:-3px;
-        font-size:22px !important; 
-     }
-
-     .store-option
-     {
-         height:180px;
-         width:185px;
-         font-size:20px;
-     }
-
-     .store-option:hover
-     {
-         font-size:22px;
-     }
-}
-*/
 @media only screen and (max-width: 768px) and (min-width:413px) {
     .underline-sale-item
     {
@@ -2287,10 +2173,24 @@ and (max-device-width : 1024px)
     
 }
 
+
 @media only screen and (max-width: 767px) {
     .about-business-header
     {
+        text-align: center;
         font-size:17px;
+    }
+
+    .text-unit
+    {
+        font-size:15px;
+        text-align: center;
+    }
+
+    .center-vertical
+    {
+        justify-content: center;
+        margin-bottom:20px;
     }
 
     .divider-image-text
@@ -2302,12 +2202,7 @@ and (max-device-width : 1024px)
 @media only screen and (max-width: 505px) {
     .divider-image-text
     {
-        font-size:20px;
-    }
-
-    .site-title-small
-    {
-        font-size:15px !important;
+        font-size:32px;
     }
 
     .owl
@@ -2322,6 +2217,25 @@ and (max-device-width : 1024px)
         height:230px;
         width:230px;
     }
+}
+
+@media only screen and (max-width:505px) and (min-width:375px)
+{
+    .site-title-small
+    {
+        font-size:19px !important;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    
+
+    .site-title-small
+    {
+        font-size:15px !important;
+    }
+
+    
 }
 
 
