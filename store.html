@@ -35,7 +35,7 @@
     </style>
   </head>
   <body>
-      <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
+     <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
           <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
           <div class = "inline-block">
             <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
@@ -50,13 +50,15 @@
             </div>
         </div>
     <div id = "marginPush" class = "margin-top-push"></div>
+    
     <!-- Mobile Header --> 
-   <div class = "hidden-lg-up">
+    <div class = "hidden-lg-up">
+        
         <nav class="full-width navbar navbar-mobile navbar-toggleable-md navbar-light bg-faded margin-bottom-large">
-<a href = "index.html" class = "text-center kill-link-style">
+        <a href = "index.html" class = "text-center kill-link-style">
             <img src = "images/logo.png" class = "mobile-logo inline"/>
         </a>
-<span class = "move-up-large">
+            <span class = "move-up-large">
   <button class="move-left navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -93,12 +95,16 @@
 </nav>
     </div>
 
+
+
+
+
     <!-- Desktop Header --> 
     <div class = "hidden-md-down">
         <div class = "col col-12 text-center"> 
             <a href = "index.html"><img src = "images/logo.png" class = "header-logo"/></a>
         </div>
-        <nav id = "header-move" class="col col-12 col-centered navbar navbar-toggleable-md navbar-light">
+        <nav id = "header-move" class="row col-centered navbar navbar-toggleable-md navbar-light">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -108,13 +114,13 @@
             
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link nav-link-text" href="index.html">HOME <span class="sr-only">(current)</span></a>
                 </div>
             </li>
             
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link" href="store.html">STORE</a>
+                    <a class="nav-link nav-link-text" href="store.html">STORE</a>
                 </div>
             </li>
             <li class="nav-item nav-item-big">
@@ -122,17 +128,17 @@
             </li>
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link" href="about.html">ABOUT</a>
+                    <a class="nav-link nav-link-text" href="about.html">ABOUT</a>
                 </div>
             </li>
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-link nav-link-text" href="contact.html">CONTACT</a>
                 </div>
             </li>
             
             <div class = "site-subtitle">
-                <span class = "line margin-right hidden-sm-down"></span>Hats, owls, and good prices<span class = "line margin-left hidden-sm-down"></span> 
+                <span class = "line margin-right hidden-sm-down"></span>re-inventing streetwear with affordable goods<span class = "line margin-left hidden-sm-down"></span> 
             </span>
         </ul>
     </div>
@@ -144,8 +150,10 @@
             <div class = "about-business-header store-header">What are you looking for today?</div>
         </div>
         <div class = "hidden-sm-down">
+        
             <div class = "thick-line"></div>
             <div class = "about-business-header store-header">What are you looking for today?</div>
+
         </div>
 
         <div class = "row max-large-category-width">
@@ -361,7 +369,7 @@
     </div>
     <br />
 
-<div class = "col col-12 footer text-center">
+ <div class = "col col-12 footer text-center">
 
         <span class = "move-up">
         <div class = "row pad-row">
@@ -372,16 +380,18 @@
                     <a class = "kill-link-style" href = "store.html"><div class = "footer-item mobile-footer-item">Store</div></a>
                     <a class = "kill-link-style" href = "about.html"><div class = "footer-item mobile-footer-item">About</div></a>
                     <a class = "kill-link-style" href = "contact.html"><div class = "footer-item mobile-footer-item">Contact</div></a>
-                    <a class = "kill-link-style" href = "charity.html"><div class = "footer-item mobile-footer-item">Charity</div></a>
+                    <a class = "kill-link-style" href = "partners.html"><div class = "footer-item mobile-footer-item">Partners</div></a>
                 </div>
 
                 <span class = "row hidden-md-up footer-item-line">
                     <span class = "center-block">
-                        <a class = "kill-link-style push-right" href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a class = "kill-link-style push-right" href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon facebook-color fa fa-facebook-official" aria-hidden="true"></i></a>
                     <span class = "pad-right"></span>
-                    <a class = "kill-link-style push-right" href = "https://twitter.com/brockway_street" target = "_blank"><i class="social-media-icon fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class = "kill-link-style push-right" href="mailto:info@brockwaystreet.com?Subject=Hello" target="_top"><i class="social-media-icon mail-color fa fa-envelope" aria-hidden="true"></i></a>
                     <span class = "pad-right"></span>
-                    <a class = "kill-link-style push-right" href = "https://www.instagram.com/brockwaystreet/" target = "_blank"><i class="social-media-icon fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class = "kill-link-style push-right" href = "https://twitter.com/brockway_street" target = "_blank"><i class="social-media-icon twitter-color fa fa-twitter" aria-hidden="true"></i></a>
+                    <span class = "pad-right"></span>
+                    <a class = "kill-link-style push-right" href = "https://www.instagram.com/brockwaystreet/" target = "_blank"><i class="social-media-icon instagram-color fa fa-instagram" aria-hidden="true"></i></a>
                     </span>
                 </span>
                
@@ -390,32 +400,34 @@
                     <a href = "store.html" class = "kill-link-style footer-item">Store <span class = "slash">/</span></a>
                     <a href = "about.html" class = "kill-link-style footer-item">About <span class = "slash">/</span></a>
                     <a href = "contact.html" class = "kill-link-style footer-item">Contact <span class = "slash">/</span></a>
-                    <a href = "charity.html" class = "kill-link-style footer-item">Charity</a>
+                    <a href = "partners.html" class = "kill-link-style footer-item">Partners</a>
                 </span>
                 </span>
 
                 <span class = "hidden-sm-down small-margin-top">
                     <span class = "row footer-item-line">
-                       <a class = "kill-link-style push-right" href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a class = "kill-link-style push-right" href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon facebook-color fa fa-facebook-official" aria-hidden="true"></i></a>
                     <span class = "pad-right"></span>
-                    <a class = "kill-link-style push-right" href = "https://twitter.com/brockway_street" target = "_blank"><i class="social-media-icon fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class = "kill-link-style push-right" href="mailto:info@brockwaystreet.com?Subject=Hello" target="_top"><i class="social-media-icon mail-color fa fa-envelope" aria-hidden="true"></i></a>
                     <span class = "pad-right"></span>
-                    <a class = "kill-link-style push-right" href = "https://www.instagram.com/brockwaystreet/" target = "_blank"><i class="social-media-icon fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class = "kill-link-style push-right" href = "https://twitter.com/brockway_street" target = "_blank"><i class="social-media-icon fa twitter-color fa-twitter" aria-hidden="true"></i></a>
+                    <span class = "pad-right"></span>
+                    <a class = "kill-link-style push-right" href = "https://www.instagram.com/brockwaystreet/" target = "_blank"><i class="social-media-icon fa instagram-color fa-instagram" aria-hidden="true"></i></a>
+                    <!--<span class = "email-link">| <a href="mailto:info@brockwaystreet.com">info@brockwaystreet.com</a></span>-->
                     </span>
                 </span>
                 <span class = "small-margin-top"></span>
                 <div class = "row footer-item-line text-center">
                
                 <a href = "charity.html" class = "hidden-sm-down charity-box">
-                        A portion of all proceeds is donated to charity. Click here to learn more. 
+                        We are committed to supporting charitable efforts. Click here to learn more. 
                 </a>
-                
-
+    
                 </div>
             </div>
             
             <a href = "charity.html" class = "hidden-md-up col-10 text-center charity-box mobile-charity-box">
-                    A portion of all proceeds is donated to charity. Click here to learn more. 
+                    We are committed to supporting charitable efforts. Click here to learn more.
             </a>
            <div class = "col hidden-sm-down col-12 col-sm-6 footer-item-container">
                 <span class = "row footer-item-line text-right float-right">
@@ -450,9 +462,9 @@
             </span>
             </span>
         <div class= "col col-12 text-center">
-                   <span class = "email-us hidden-sm-down move-down pad-down" href="mailto:info@brockwaystreet.com"> &#169 
+                   <span class = "email-us hidden-sm-down move-down pad-down"> &#169 
                         Copyright 2017 Brockway Street. All Rights Reserved.</span>
-                   <span class = "email-us hidden-md-up move-up" href="mailto:info@brockwaystreet.com">&#169 
+                   <span class = "email-us hidden-md-up move-up">&#169 
                         Copyright 2017 Brockway Street. All Rights Reserved.</span>
         </div>
         </div>
