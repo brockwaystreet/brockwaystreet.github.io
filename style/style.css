@@ -250,7 +250,7 @@ button:focus {
 
 .contact-option:hover
 {
-    font-size:18px;
+    font-size:18px !important;
     cursor:pointer;
     color:#fff;
     background-color:#000;
