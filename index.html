@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel = "stylesheet" href = "style/style.css" />
-    <link rel="stylesheet" href="style/swiper.min.css" />
+    <link rel="stylesheet" href="style/swiper.css" />
     <link rel = "stylesheet" href = "style/animate.css" />
     <link rel="icon" href="images/logo.ico" />
     <script>
@@ -36,6 +36,12 @@
         color:#000;
         margin: 0;
         padding: 0;
+    }
+
+    .swiper-container {
+        height:70vh;
+        padding-left:0px !important;
+        padding-right:0px !important;
     }
 
 
@@ -57,6 +63,7 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+        background-size: cover;
     }
 
    
@@ -145,26 +152,26 @@
             
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link nav-link-text" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    <a id = "black" class="nav-link nav-link-text" href="index.html">HOME <span class="sr-only">(current)</span></a>
                 </div>
             </li>
             
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link nav-link-text" href="store.html">STORE</a>
+                    <a id = "black" class="nav-link nav-link-text" href="store.html">STORE</a>
                 </div>
             </li>
             <li class="nav-item nav-item-big">
-                <span class="nav-link site-title" onclick = "goHome()" onTap= "goHome()">BROCKWAY STREET</span>
+                <span id = "black" class="nav-link site-title" onclick = "goHome()" onTap= "goHome()">BROCKWAY STREET</span>
             </li>
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link nav-link-text" href="about.html">ABOUT</a>
+                    <a id = "black" class="nav-link nav-link-text" href="about.html">ABOUT</a>
                 </div>
             </li>
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link nav-link-text" href="contact.html">CONTACT</a>
+                    <a id = "black" class="nav-link nav-link-text" href="contact.html">CONTACT</a>
                 </div>
             </li>
             
@@ -192,8 +199,12 @@
     
         <div class="swiper-pagination"></div>
      
+     <!--
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+        -->
+        <img src = "images/left-arrow-white.svg" class = "swiper-button-prev swiper-button-switch"/>
+        <img src = "images/right-arrow-white.svg" class = "swiper-button-next swiper-button-switch"/>
     </div>
 
     <div class = "col col-11 col-centered stylized-container margin-top-huge text-center">

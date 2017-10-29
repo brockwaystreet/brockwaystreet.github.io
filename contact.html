@@ -113,26 +113,26 @@
             
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link nav-link-text" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    <a id = "black" class="nav-link nav-link-text" href="index.html">HOME <span class="sr-only">(current)</span></a>
                 </div>
             </li>
             
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link nav-link-text" href="store.html">STORE</a>
+                    <a id = "black" class="nav-link nav-link-text" href="store.html">STORE</a>
                 </div>
             </li>
             <li class="nav-item nav-item-big">
-                <span class="nav-link site-title" onclick = "goHome()" onTap= "goHome()">BROCKWAY STREET</span>
+                <span id = "black" class="nav-link site-title" onclick = "goHome()" onTap= "goHome()">BROCKWAY STREET</span>
             </li>
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link nav-link-text" href="about.html">ABOUT</a>
+                    <a id = "black" class="nav-link nav-link-text" href="about.html">ABOUT</a>
                 </div>
             </li>
             <li class="nav-item">
                 <div class = "nav-item-wrap">
-                    <a class="nav-link nav-link-text" href="contact.html">CONTACT</a>
+                    <a id = "black" class="nav-link nav-link-text" href="contact.html">CONTACT</a>
                 </div>
             </li>
             
@@ -168,16 +168,21 @@
     </span>
 </div>
     <div class = "col col-sm-8 col-md-9 col-centered">
-        <div class = "row">
-            <div class = "col col-12 col-md-4 text-center margin-top">
-                <div id = "item-request-option" class = "contact-option no-select animated fadeIn" onClick = "updateForm('itemRequests')" on-tap = "updateForm('itemRequests')">Item Requests</div>
-            </div>
-            <div class = "col col-12 col-md-4 text-center margin-top animated fadeIn">
-                <div id = "general-option" class = "contact-option no-select selected-contact-option" onClick = "updateForm('general')" on-tap = "updateForm('general')">General</div>
-            </div>
-            <div class = "col col-12 col-md-4 text-center margin-top animated fadeIn">
-                <div id = "feedback-option" class = "contact-option no-select" onClick = "updateForm('feedback')" on-tap = "updateForm('feedback')">Feedback</div>
-            </div>
+        <div class = "row margin-top text-center" style = "height:70px;">
+
+<div class = "position-form-controls">
+        <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+            <label id = "item-request-option" class="btn btn-primary animated fadeIn delay1 outfit-button cell-button" onClick = "updateForm('itemRequests')" on-tap = "updateForm('itemRequests')">
+                <input type="radio" name="options" id="option1" autocomplete="off"> ITEM REQUESTS
+            </label>
+            <label id = "general-option" class="btn btn-primary outfit-button animated fadeIn delay1 selected-contact-option cell-button" onClick = "updateForm('general')" on-tap = "updateForm('general')">
+                <input type="radio" name="options" id="option2" autocomplete="off" checked> GENERAL
+            </label>
+            <label id = "feedback-option" class="btn outfit-button btn-primary animated fadeIn delay1 cell-button" onClick = "updateForm('feedback')" on-tap = "updateForm('feedback')">
+                <input type="radio" name="options" id="option3" autocomplete="off"> FEEDBACK
+            </label>
+        </div>
+</div>
         </div>
 </div>
 <br />

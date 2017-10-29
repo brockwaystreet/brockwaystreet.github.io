@@ -30,6 +30,37 @@ a:visited
                                   supported by Chrome and Opera */
 }
 
+.outfit-button
+{
+    background-color:#fff !important;
+    border: 2px solid #000 !important;
+    line-height:53px !important;
+    width:205px !important;
+    height:65px !important;
+    font-size:18px !important;
+    color:#000 !important;
+    font-weight: bold !important;
+    border-radius: 0px !important;
+    transition: background-color .3s, font-size .3s, color .3s !important;
+}
+
+.outfit-button:hover
+{
+    cursor:pointer;
+    font-size:20px !important;
+    background-color:#000 !important;
+    color: #fff !important;
+    
+}
+
+.selected-contact-option
+{
+    font-size:20px !important;
+    color:#fff !important;
+    background-color:#000 !important;
+}
+
+
 .facebook-color:hover
 {
     transition: color .2s;
@@ -256,13 +287,6 @@ button:focus {
     background-color:#000;
 }
 
-.selected-contact-option
-{
-    font-size:19px;
-    cursor:pointer;
-    color:#fff;
-    background-color:#000;
-}
 
 .stylized-container
 {
@@ -470,6 +494,7 @@ button:focus {
     display: inline-block;
 }
 
+
 .data-input
 {
     border-radius:5px;
@@ -588,6 +613,8 @@ button:focus {
     padding: 0px 0px 0px 0px !important;
     margin: 0px 0px 0px 0px !important;
 }
+
+
 
 .no-top-margin
 {
@@ -732,6 +759,11 @@ button:focus {
     transition: .3s color;
 }
 
+#black:hover
+{
+    color:#000 !important;
+}
+
 .nav-link-text
 {
     font-size:18px;
@@ -841,6 +873,12 @@ button:focus {
     margin: 0 auto;
 }
 
+.position-form-controls
+{
+   width:100%;
+   display: inline-block !important;
+}
+
 .ad-icon
 {
     display: inline-block;
@@ -878,9 +916,15 @@ button:focus {
     background-color:#212336;
 }
 
+.swiper-button-switch
+{
+    height:45px !important;
+    width:45px !important;
+}
+
 .swiper-image-one
 {
-    background-image:url('https://s-media-cache-ak0.pinimg.com/originals/d5/7f/e0/d57fe007ae277d349e8d1bca454e0521.jpg') !important;
+    background-image:url('https://cdn.shopify.com/s/files/1/0878/7742/files/New_Slideshow_8_1800x.jpg?v=1502734642') !important;
 /*
     background-position: center center !important;
     background-repeat: no-repeat;
@@ -1882,6 +1926,10 @@ a:hover:before {
     font-size:17px !important;
 }
 
+.delay1
+{
+    animation-delay: .1s;
+}
 
 .social-icon
 {

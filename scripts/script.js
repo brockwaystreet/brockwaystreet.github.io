@@ -59,9 +59,9 @@ function updateForm(selection)
         <input class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Other</span>\</label>';
 
-        itemRequestsOption.className = "contact-option no-select selected-contact-option";
-        generalOption.className = "contact-option no-select";
-        feedbackOption.className = "contact-option no-select";
+        itemRequestsOption.className = "btn btn-primary outfit-button animated fadeIn delay1 selected-contact-option cell-button";
+        generalOption.className = "btn btn-primary outfit-button animated fadeIn delay1 cell-button";
+        feedbackOption.className = "btn btn-primary outfit-button animated fadeIn delay1 cell-button";
 
         document.getElementById("final-form-header").innerText = "Specific Item Requests";
         document.getElementById("final-form-message").placeholder = "Enter request";
@@ -84,9 +84,9 @@ function updateForm(selection)
         <span class = "no-select form-check-option">Other</span></label>\
         <label class="form-check-label">';
 
-        itemRequestsOption.className = "contact-option no-select";
-        generalOption.className = "contact-option no-select";
-        feedbackOption.className = "contact-option no-select selected-contact-option";
+        itemRequestsOption.className = "btn btn-primary outfit-button cell-button";
+        generalOption.className = "btn btn-primary outfit-button cell-button";
+        feedbackOption.className = "btn btn-primary outfit-button cell-button selected-contact-option";
 
         document.getElementById("final-form-header").innerText = "Your Feedback";
         document.getElementById("final-form-message").placeholder = "Enter feedback";
@@ -99,9 +99,9 @@ function updateForm(selection)
         document.getElementById("final-form-header").innerText = "Your Message";
         document.getElementById("final-form-message").placeholder = "Enter message";
 
-        itemRequestsOption.className = "contact-option no-select";
-        generalOption.className = "contact-option no-select selected-contact-option";
-        feedbackOption.className = "contact-option no-select";
+        itemRequestsOption.className = "btn btn-primary outfit-button cell-button";
+        generalOption.className = "btn btn-primary outfit-button cell-button selected-contact-option";
+        feedbackOption.className = "btn btn-primary outfit-button cell-button";
 
         formAdditionStatus = "general";
     }
