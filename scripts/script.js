@@ -13,6 +13,38 @@ function requestItems()
     localStorage.setItem("contactType", "requestItems");
 }
 
+function enterFocusCategory(focusType)
+{
+    if(focusType == "watches")
+    {
+        document.getElementById("focus-title-watches").className = "focus-title focus-title-hovered";
+        document.getElementById("focus-button-watches").className = "col-centered focus-button-placement focus-button-hidden animated fadeInUp";
+        document.getElementById("watches-dark").className = "row dark real-dark";
+    }
+    else if(focusType == "sunglasses")
+    {
+        document.getElementById("focus-title-sunglasses").className = "focus-title focus-title-hovered";
+        document.getElementById("focus-button-sunglasses").className = "col-centered focus-button-placement focus-button-hidden animated fadeInUp";
+        document.getElementById("sunglasses-dark").className = "row dark real-dark";
+    }
+}
+
+function exitFocusCategory(focusType)
+{
+    if(focusType == "watches")
+    {
+        document.getElementById("focus-title-watches").className = "focus-title";
+        document.getElementById("focus-button-watches").className = "col-centered focus-button-placement animated fadeOutDown";
+        document.getElementById("watches-dark").className = "row dark";
+    }
+    else if(focusType == "sunglasses")
+    {
+        document.getElementById("focus-title-sunglasses").className = "focus-title";
+        document.getElementById("focus-button-sunglasses").className = "col-centered focus-button-placement animated fadeOutDown";
+        document.getElementById("sunglasses-dark").className = "row dark";
+    }
+}
+
 function assignFormComponents()
 {
     formAddition = document.getElementById("form-addition");
