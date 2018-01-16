@@ -13,6 +13,24 @@ function requestItems()
     localStorage.setItem("contactType", "requestItems");
 }
 
+function enterSlider(page)
+{
+    if(page == "home")
+    {
+        document.getElementById("left-swiper-arrow").className = "swiper-button-prev swiper-button-switch swiper-button-switch-solid";
+        document.getElementById("right-swiper-arrow").className = "swiper-button-next swiper-button-switch swiper-button-switch-solid";
+    }
+}
+
+function exitSlider(page)
+{
+    if(page == "home")
+    {
+        document.getElementById("left-swiper-arrow").className = "swiper-button-prev swiper-button-switch";
+        document.getElementById("right-swiper-arrow").className = "swiper-button-next swiper-button-switch";
+    }
+}
+
 function enterFocusCategory(focusType)
 {
     if(focusType == "watches")

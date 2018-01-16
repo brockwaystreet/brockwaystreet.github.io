@@ -183,7 +183,7 @@
     </nav>
 </div>
 <!--<div class = "hidden-md-up eliminate-gap"></div>-->
-<div class="col col--12 col-md-11 col-centered swiper-container">
+<div class="col col--12 col-md-11 col-centered swiper-container" onmouseover="enterSlider('home')" onmouseout="exitSlider('home')">
         <div class="swiper-wrapper">
             <div class="swiper-slide swiper-image-one"></div>
             <div class="swiper-slide">Slide 2</div>
@@ -203,8 +203,8 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         -->
-        <img src = "images/left-arrow-white.svg" class = "swiper-button-prev swiper-button-switch"/>
-        <img src = "images/right-arrow-white.svg" class = "swiper-button-next swiper-button-switch"/>
+        <img id = "left-swiper-arrow" src = "images/left-arrow-white.svg" class = "swiper-button-prev swiper-button-switch"/>
+        <img id = "right-swiper-arrow" src = "images/right-arrow-white.svg" class = "swiper-button-next swiper-button-switch"/>
     </div>
 
     <div class = "col col-11 col-centered stylized-container margin-top-huge text-center">
@@ -341,52 +341,6 @@
                     </div>
                 </div>
             </div>
-          
-          <!--
-            <div class = "col col-12 col-md-6 text-left no-pad">
-        
-               
-                <div id = "watches-box" class = "focus-category-box text-center watches-pic no-select" onmouseover="enterFocusCategory('watches')" onmouseout="exitFocusCategory('watches')">
-                    
-                    <span id = "focus-title-watches" class = "focus-title">
-                    SHOP WATCHES
-                    </span>
-
-                    <div id = "focus-button-watches" class = "col-centered focus-button-placement focus-button-hidden">
-                        <div class = "row">
-                            <div class = "col col-12 col-md-6 text-right">
-                                <div class = "focus-category-button">SHOP MEN</div>
-                            </div>
-                            <div class = "col col-12 col-md-6 text-left">
-                                <div class = "focus-category-button">SHOP WOMEN</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-             
-            </div>
-            <div class = "col col-12 col-md-6 text-right no-pad-right">
-                <div class = "focus-category-box text-center sunglasses-pic no-select" onmouseover="enterFocusCategory('sunglasses')" onmouseout="exitFocusCategory('sunglasses')">
-                    <div class = "col col-12 dark"></div>
-                    <span id = "focus-title-sunglasses" class = "focus-title">
-                    SHOP SUNGLASSES
-                    </span>
-                    
-                    <div id = "focus-button-sunglasses" class = "col-centered focus-button-placement focus-button-hidden">
-                        <div class = "row">
-                            <div class = "col col-12 col-md-6 text-right">
-                                <div class = "focus-category-button">SHOP MEN</div>
-                            </div>
-                            <div class = "col col-12 col-md-6 text-left">
-                                <div class = "focus-category-button">SHOP WOMEN</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            -->
         </div>
     </div>
 

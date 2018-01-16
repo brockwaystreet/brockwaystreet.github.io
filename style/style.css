@@ -1097,6 +1097,13 @@ button:focus {
 {
     height:45px !important;
     width:45px !important;
+    opacity: 0.35;
+    transition: opacity .3s ease;
+}
+
+.swiper-button-switch-solid
+{
+    opacity: 1;
 }
 
 .swiper-image-one
