@@ -34,10 +34,10 @@ a:visited
 {
     background-color:#fff !important;
     border: 2px solid #000 !important;
-    line-height:53px !important;
-    width:205px !important;
-    height:65px !important;
-    font-size:18px !important;
+    line-height:53px;
+    width:205px;
+    height:65px;
+    font-size:18px;
     color:#000 !important;
     font-weight: bold !important;
     border-radius: 0px !important;
@@ -47,15 +47,14 @@ a:visited
 .outfit-button:hover
 {
     cursor:pointer;
-    font-size:20px !important;
+    font-size:20px ;
     background-color:#000 !important;
     color: #fff !important;
-    
 }
 
 .selected-contact-option
 {
-    font-size:20px !important;
+    font-size:20px;
     color:#fff !important;
     background-color:#000 !important;
 }
@@ -2431,7 +2430,135 @@ a:hover:before {
 
 /* Responsive Code */
 
+@media only screen 
+and (max-width: 992px)
+{
+    
+}
 
+@media only screen 
+and (max-width: 358px)
+{
+    .outfit-button
+    {
+        line-height:35px;
+        width:95px;
+        height:53px;
+        font-size:7px;
+    }
+
+    .outfit-button:hover
+    {
+        cursor:pointer;
+        font-size:7.5px;
+       
+    }
+
+    .selected-contact-option
+    {
+        font-size:7.5px;  
+    } 
+}
+
+@media only screen 
+and (max-width: 456px)
+and (min-width: 359px)
+{
+    .outfit-button
+    {
+        line-height:38px;
+        width:110px;
+        height:55px;
+        font-size:8.5px;
+    }
+
+    .outfit-button:hover
+    {
+        cursor:pointer;
+        font-size:9px;
+       
+    }
+
+    .selected-contact-option
+    {
+        font-size:9px;  
+    }
+}
+
+@media only screen
+and (max-width: 543px)
+and (min-width: 455px)
+{
+    .outfit-button
+    {
+        line-height:43px;
+        width:135px;
+        height:60px;
+        font-size:11px;
+    }
+
+    .outfit-button:hover
+    {
+        cursor:pointer;
+        font-size:12.2px;
+       
+    }
+
+    .selected-contact-option
+    {
+        font-size:12.2px;  
+    }
+}
+
+@media only screen
+and (max-width: 632px)
+and (min-width: 544px)
+{
+    .outfit-button
+    {
+        line-height:43px;
+        width:165px;
+        height:60px;
+        font-size:14px;
+    }
+
+    .outfit-button:hover
+    {
+        cursor:pointer;
+        font-size:15.5px;
+       
+    }
+
+    .selected-contact-option
+    {
+        font-size:15.5px;  
+    }
+}
+
+@media only screen 
+and (max-width:810px)
+and (min-width: 633px)
+{
+    .outfit-button
+    {
+        line-height:53px;
+        width:195px;
+        height:65px;
+        font-size:16px;
+    }
+
+    .outfit-button:hover
+    {
+        cursor:pointer;
+        font-size:17.5px;
+       
+    }
+
+    .selected-contact-option
+    {
+        font-size:17.5px;  
+    }
+}
 
 @media only screen 
 and (max-width:375px)

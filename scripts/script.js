@@ -109,9 +109,9 @@ function updateForm(selection)
         <input class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Other</span>\</label>';
 
-        itemRequestsOption.className = "btn btn-primary outfit-button animated fadeIn delay1 selected-contact-option cell-button";
-        generalOption.className = "btn btn-primary outfit-button animated fadeIn delay1 cell-button";
-        feedbackOption.className = "btn btn-primary outfit-button animated fadeIn delay1 cell-button";
+        itemRequestsOption.className = "btn btn-primary outfit-button selected-contact-option cell-button";
+        generalOption.className = "btn btn-primary outfit-button cell-button";
+        feedbackOption.className = "btn btn-primary outfit-button cell-button";
 
         document.getElementById("final-form-header").innerText = "Specific Item Requests";
         document.getElementById("final-form-message").placeholder = "Enter request";
