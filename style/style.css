@@ -179,7 +179,8 @@ a:visited
     display: inline-block;
     height:71px;
     line-height: 71px;
-    width:238px;
+    padding-left:10px;
+    padding-right:10px;
     color:#000;
     background-color:#fff;
     margin-left:5px;
@@ -594,6 +595,7 @@ button:focus {
     margin-bottom:10px;
     /*color:#8a8f93;*/
     color:#000;
+    font-weight: bold;
     font-size:16px;
 }
 
@@ -682,7 +684,7 @@ button:focus {
     display: block;
     margin-left:auto;
     margin-right:auto;
-    height:2px;
+    height:3px;
     width:160px;
     background-color: #000;
 }
@@ -1357,6 +1359,32 @@ button:focus {
 {
     background-image:url("../images/shirt.svg"); 
 }
+
+.scroll-img
+{
+    position: relative;
+    border: 2px solid #fff;
+    transition: margin-top .3s ease, box-shadow .3s;
+}
+
+.scroll-img:hover
+{
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-top:-3px;
+}
+
+.hashtag
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+}
+
+.hashtag-pos
+{
+    margin-top: -35px;
+    margin-bottom: 30px;
 }
 
 
@@ -1845,11 +1873,13 @@ button:focus {
 .store-item-price
 {
     font-size:18px;
+    font-weight: bold;
 }
 
 .store-item-header
 {
     font-size:18px;
+    font-weight: bold;
 }
 
 .store-item-header:hover
@@ -1967,6 +1997,10 @@ button:focus {
     font-weight:bold;
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
 .scroll-button
 {
     position: absolute;
@@ -2519,6 +2553,12 @@ a:hover:before {
 /* Responsive Code */
 
 @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  
+{
+    
+}
+@media only screen 
 and (max-width: 992px)
 {
     .team-member
@@ -2665,11 +2705,7 @@ and (max-width:375px)
         font-size:26px !important;
     }
 
-    .focus-category-button
-    {
-        width:125px !important;
-        font-size:14px;
-    }
+    
 }
 
 @media only screen 
@@ -2687,12 +2723,7 @@ and (max-width: 419px)
         font-size: 31px !important;
     }
 
-    .focus-category-button
-    {
-        margin-top:10px;
-        width:140px !important;
-        font-size: 15px !important;
-    }
+    
 }
 
 @media only screen
@@ -2705,11 +2736,6 @@ and (max-width: 512px)
         font-size: 31px !important;
     }
 
-    .focus-category-button
-    {
-        width:170px;
-        font-size: 16.5px;
-    }
 }
 
 @media only screen 
@@ -2752,11 +2778,7 @@ and (min-width: 768px)
         font-size: 30px;
     }
 
-    .focus-category-button
-    {
-        width:145px;
-        font-size:15px;
-    }
+    
 }
 
 @media only screen 
@@ -2768,11 +2790,7 @@ and (min-width: 856px)
         font-size:33px;
     }
 
-    .focus-category-button
-    {
-        width:170px;
-        font-size: 16.5px;
-    }
+  
 }
 
 @media only screen 
