@@ -37,8 +37,10 @@
     
     </style>
   </head>
-  <body class="demo-3 loading">
-		<div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
+  <body class="demo-3 loading" onload="checkFirstLoad()">
+      <div id = "mailing-list">
+                <!--
+           <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
                 <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
                 <div class = "inline-block">
                   <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
@@ -52,6 +54,8 @@
                       </span>
                   </div>
               </div>
+          -->
+            </div>
           <div id = "marginPush" class = "margin-top-push"></div>
           
           <!-- Mobile Header --> 
@@ -103,7 +107,7 @@
       
       
           <!-- Desktop Header --> 
-          <div class = "hidden-md-down">
+          <div class = "hidden-md-down margin-top">
               <div class = "col col-12 text-center"> 
                   <a href = "index.html"><img src = "images/logo.png" class = "header-logo"/></a>
               </div>

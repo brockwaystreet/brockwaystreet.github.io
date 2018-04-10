@@ -1305,7 +1305,16 @@ button:focus {
 {
     position: relative;
     top:3px;
+}
 
+.pointer:hover
+{
+    cursor: pointer;
+}
+
+.longer-item
+{
+    width:110px;
 }
 
 .divider
@@ -1358,6 +1367,11 @@ button:focus {
 .shirts-icon
 {
     background-image:url("../images/shirt.svg"); 
+}
+
+.hats-icon
+{
+    background-image: url("../images/cap.svg");
 }
 
 .scroll-img

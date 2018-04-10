@@ -48,8 +48,6 @@
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: pink;
-        
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -72,9 +70,12 @@
     
     </style>
   </head>
-  <body>
-      <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
-          <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
+  <body onload="checkFirstLoad()">
+      <div id = "mailing-list">
+    <!--  
+    <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
+          
+        <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
           <div class = "inline-block">
             <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
             <div class = "hidden-md-up margin-bottom"></div>
@@ -86,7 +87,9 @@
                     </label>
                 </span>
             </div>
-        </div>
+        
+        </div>-->
+      </div>
     <div id = "marginPush" class = "margin-top-push"></div>
     
     <!-- Mobile Header --> 
@@ -138,7 +141,7 @@
 
 
     <!-- Desktop Header --> 
-    <div class = "hidden-md-down">
+    <div class = "hidden-md-down margin-top">
         <div class = "col col-12 text-center"> 
             <a href = "index.html"><img src = "images/logo.png" class = "header-logo"/></a>
         </div>
@@ -305,21 +308,24 @@
         <div class = "row">
 
             <div class = "col col-12 col-md-6 text-position-watches no-pad">
-                <div class = " col col-12 focus-category-box text-center watches-pic" onmouseover = "enterFocusCategory('watches')" onmouseout = "exitFocusCategory('watches')">
-                    <span id = "watches-dark" class = "row dark"></span>
-                    <span id = "focus-title-watches" class = "focus-title">
-                    SHOP WATCHES
-                    </span>
+                <a href = "store.html">
+                    <div class = " col col-12 focus-category-box text-center watches-pic" onmouseover = "enterFocusCategory('watches')" onmouseout = "exitFocusCategory('watches')">
+                        <span id = "watches-dark" class = "row dark"></span>
+                        <span id = "focus-title-watches" class = "focus-title">
+                        SHOP WATCHES
+                        </span>
 
-                    <div id = "focus-button-watches" class = "col-centered focus-button-placement focus-button-hidden">
-                        <div class = "focus-category-button">
-                        VIEW CATALOGUE
-                        </div>   
+                        <div id = "focus-button-watches" class = "col-centered focus-button-placement focus-button-hidden">
+                            <div class = "focus-category-button">
+                            VIEW CATALOGUE
+                            </div>   
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class = "col col-12 col-md-6 text-position-sunglasses no-pad-right">
+                <a href = "store.html">
                 <div class = "col col-12 focus-category-box text-center sunglasses-pic" onmouseover = "enterFocusCategory('sunglasses')" onmouseout = "exitFocusCategory('sunglasses')">
                     <span id = "sunglasses-dark" class = "row dark"></span>
                     <span id = "focus-title-sunglasses" class = "focus-title">
@@ -332,6 +338,7 @@
                         </div>   
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -476,9 +483,9 @@
             </span>
         <div class= "col col-12 text-center">
                    <span class = "email-us hidden-sm-down move-down pad-down"> &#169 
-                        Copyright 2017 Brockway Street. All Rights Reserved.</span>
+                        Copyright 2018 Brockway Street. All Rights Reserved.</span>
                    <span class = "email-us hidden-md-up move-up">&#169 
-                        Copyright 2017 Brockway Street. All Rights Reserved.</span>
+                        Copyright 2018 Brockway Street. All Rights Reserved.</span>
         </div>
         </div>
     </div>
