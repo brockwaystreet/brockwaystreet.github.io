@@ -58,6 +58,11 @@ a:visited
     color: #fff !important;
 }
 
+.bold
+{
+    font-weight: bold;
+}
+
 .selected-contact-option
 {
     font-size:20px;
@@ -65,6 +70,25 @@ a:visited
     background-color:#000 !important;
 }
 
+.detail-focus-image
+{
+    background-size: cover;
+    height:70vh;
+    width:100%;
+    background-color: red;
+}
+
+.detail-focus1
+{
+    background-position: center center;
+    background-image: url('../images/aiden.jpg');
+}
+
+.detail-focus2
+{
+    background-position: center bottom;
+    background-image: url('../images/closerlook.jpg');
+}
 
 .facebook-color:hover
 {
@@ -253,6 +277,12 @@ a:visited
 .blue
 {
     background-color: blue !important;
+}
+
+.detail-focus-header
+{
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .divider-image-text
@@ -557,6 +587,19 @@ button:focus {
     position: relative;
     top:-50px;
     left:20px;
+}
+
+.stylized-container-header-detail
+{
+    height:55px;
+    padding-left:15px;
+    padding-right: 15px;
+    line-height:55px;
+    text-align: center;
+    font-size:21px;
+    font-weight: bold;
+    background-color:#000;
+    color:#fff;
 }
 
 .stylized-container-header
@@ -928,6 +971,11 @@ button:focus {
     margin-bottom:4px;
 }
 
+.rocksalt
+{
+    font-family: 'Rock Salt', cursive;
+}
+
 .site-title
 {
     font-family: 'Rock Salt', cursive;
@@ -936,6 +984,11 @@ button:focus {
     font-size:32px;
     font-weight:bold;
     color:#000 !important;
+}
+
+.white
+{
+    color:#fff !important;
 }
 
 .site-title-small
@@ -1270,10 +1323,21 @@ button:focus {
     color:#787878;
 }
 
+.pic-description
+{
+    margin-top: 25px !important;
+    font-weight: bold;
+    font-size:20px !important;
+}
 
 .animateMarginTop
 {
     transition: margin-top .9s;
+}
+
+.margin-top-larger
+{
+    margin-top:35px;
 }
 
 .margin-top-push
@@ -1383,9 +1447,8 @@ button:focus {
 
 .scroll-img:hover
 {
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
     cursor: pointer;
-    margin-top:-3px;
 }
 
 .hashtag
@@ -1574,6 +1637,17 @@ button:focus {
 .store-header
 {
     font-size:30px !important;
+}
+
+.no-point
+{
+    pointer-events: none;
+}
+
+.eliminate-padding
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .mailing-list-panel
