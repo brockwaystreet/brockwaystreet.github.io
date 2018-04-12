@@ -191,11 +191,12 @@
 }
 /* Bullets */
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 9.5px;
+  height: 9.5px;
   display: inline-block;
   /*border-radius: 100%;*/
   background: #fff;
+  border: 2px solid #000;
   opacity: 0.2;
 
 }
