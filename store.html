@@ -34,9 +34,7 @@
     
     </style>
   </head>
-  <body onload="checkFirstLoad()">
-      <div id = "mailing-list">
-          <!--
+  <body>
      <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
           <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
           <div class = "inline-block">
@@ -51,8 +49,6 @@
                 </span>
             </div>
         </div>
-    -->
-      </div>
     <div id = "marginPush" class = "margin-top-push"></div>
     
     <!-- Mobile Header --> 
@@ -104,7 +100,7 @@
 
 
     <!-- Desktop Header --> 
-    <div class = "hidden-md-down margin-top">
+    <div class = "hidden-md-down">
         <div class = "col col-12 text-center"> 
             <a href = "index.html"><img src = "images/logo.png" class = "header-logo"/></a>
         </div>
@@ -161,24 +157,19 @@
         </div>
 
         <div class = "row max-large-category-width">
-            <div class = "col col-12 col-md-3 text-center">
-                <div class = "store-option watches-icon" onclick = "filterItems('watches')" on-tap = "filterStore('watches')">Watches</div>
+            <div class = "col col-12 col-md-4 text-center">
+                <div class = "store-option watches-icon">Our Watches</div>
             </div>
 
-            <div class = "col col-12 col-md-3 text-center">
-                <div class = "store-option sunglasses-icon" onclick = "filterItems('sunglasses')" on-tap="filterItems('sunglasses')">Sunglasses</div>
+            <div class = "col col-12 col-md-4 text-center">
+                <div class = "store-option sunglasses-icon">Our Sunglasses</div>
             </div>
 
-            <div class = "col col-12 col-md-3 text-center">
-                <div class = "store-option shirts-icon">Shirts</div>
-            </div>
-            <div class = "col col-12 col-md-3 text-center">
-                <div class = "store-option hats-icon">Hats</div>
-            </div>
-            <div class = "col col-12 text-center margin-top">
-                <div class = "form-button form-button-largest" onClick = "requestItems()" on-tap = "requestItems()">View All</div>
+            <div class = "col col-12 col-md-4 text-center">
+                <div class = "store-option shirts-icon">Our Shirts</div>
             </div>
         </div>
+   
     </div>
 
     
@@ -191,11 +182,10 @@
         </div>
 
         </div>
-        <div id = "filter-items">
         <div class = "row max-items-width">
             <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
                 <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                    <img src = "images/placeholder-item2.png" class = "store-item-image" />
+                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
                     
                     <div>
                         <span class = "store-item-header">Item Name</span>
@@ -210,21 +200,7 @@
             <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
                 <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
                 
-                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
-                    <div>
-                        <span class = "store-item-header">Item Name</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                   
-                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
+                    <img src = "images/placeholder-item2.png" class = "store-item-image" />
                     <div>
                         <span class = "store-item-header">Item Name</span>
                         <span class = "underline-sale-item"></span>
@@ -248,13 +224,27 @@
                     </div>
                 </a>
             </div>
+
+            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
+                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
+                   
+                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
+                    <div>
+                        <span class = "store-item-header">Item Name</span>
+                        <span class = "underline-sale-item"></span>
+                        <div class = "store-item-price">35$</div>
+                        <div class = "store-item-button">Add to Cart</div>
+                        <div class = "store-item-button">More Info</div>
+                    </div>
+                </a>
+            </div>
         </div>
 
          <div class = "row max-items-width">
             <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
                 <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
                     
-                    <img src = "images/placeholder-item2.png" class = "store-item-image" />
+                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
                     <div>
                         <span class = "store-item-header">Item Name</span>
                         <span class = "underline-sale-item"></span>
@@ -268,7 +258,7 @@
             <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
                 <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
                 
-                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
+                    <img src = "images/placeholder-item2.png" class = "store-item-image" />
                     <div>
                         <span class = "store-item-header">Item Name</span>
                         <span class = "underline-sale-item"></span>
@@ -307,7 +297,7 @@
                 </a>
             </div>
         </div>
-        </div>
+
             
     </div>
 
@@ -418,9 +408,9 @@
             </span>
         <div class= "col col-12 text-center">
                    <span class = "email-us hidden-sm-down move-down pad-down"> &#169 
-                        Copyright 2018 Brockway Street. All Rights Reserved.</span>
+                        Copyright 2017 Brockway Street. All Rights Reserved.</span>
                    <span class = "email-us hidden-md-up move-up">&#169 
-                        Copyright 2018 Brockway Street. All Rights Reserved.</span>
+                        Copyright 2017 Brockway Street. All Rights Reserved.</span>
         </div>
         </div>
     </div>

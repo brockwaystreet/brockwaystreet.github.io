@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Brockway Street | Charity</title>
+    <title>Brockway Street | Contact</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
@@ -33,8 +33,8 @@
     
     </style>
   </head>
-  <body>
-      <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
+  <body onLoad = "assignFormComponents()">
+  <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
           <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
           <div class = "inline-block">
             <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
@@ -111,7 +111,7 @@
         <ul class="col col-12 navbar-nav text-center">
             <span class = "col col-12 nav-item-wrapper">
             
-             <li class="nav-item">
+            <li class="nav-item">
                 <div class = "nav-item-wrap">
                     <a id = "black" class="nav-link nav-link-text" href="index.html">HOME <span class="sr-only">(current)</span></a>
                 </div>
@@ -148,106 +148,43 @@
     <span class = "hidden-sm-down">
         <div class = "col col-10 col-centered">
             <div class = "thick-line"></div>
-            <div class = "about-business-header">Charitable Efforts</div>
+            <div class = "about-business-header">About Us</div>
             <div class = "about-business-body">
-                At Brockway Street, we value using our resources to do what we can for those who are less fortunate. That's why we have decided to donate a portion of all proceeds to <a href = "http://www.actionagainsthunger.org/" class = "open-link" target = "_blank">Action Against Hunger</a>, a non-profit that provides lifesaving 
-                support to nearly 50 countries around the world. Their services include treating undernourished children, providing water and sanitation to impoverished communities, and improving emergency response in places that currently cannot meet basic survival needs. You can read more about their impactful work <a href = "http://www.actionagainsthunger.org/programs" class = "open-link" target = "_blank">here</a>. 
-                <br /><br />
-                If you have suggestions regarding charities you would like us to direct funds to, let us know <a href = "contact.html" class = "open-link">here</a> or by emailing us at <a href="mailto:info@brockwaystreet.com" class = "open-link">info@brockwaystreet.com</a>. 
+              Brockway Street establishes itself as a provider of comfortable and stylish streetwear that doesn't have to empty your wallet. Here, we carefully handpick designs that fit our customer’s desires while also considering quality and affordability. 
+
+            </div>
+        </div>
+        <br />
+
+        <div class = "col col-10 col-centered">
+        <div class = "thick-line"></div>
+            <div class = "about-business-header">Commitment to Customer Support</div>
+            <div class = "about-business-body">
+             We believe that providing quality customer support is a critical component of doing business right. We double check to make sure all the items that you get are exactly what you wanted. If anything does not match your pleasing, let us know on our contact us page and we’ll figure everything out.  
+
             </div>
         </div>
     </span>
 
      <span class = "hidden-md-up text-center">
-         
-        <div class = "col col-10 col-centered about-business-header">Charitable Efforts</div>
-        <div class = "about-business-body">
-                At Brockway Street, we value using our resources to do what we can for those who are less fortunate. That's why we have decided to donate a portion of all proceeds to <a href = "http://www.actionagainsthunger.org/" class = "open-link" target = "_blank">Action Against Hunger</a>, a non-profit that provides lifesaving 
-                support to nearly 50 countries around the world. 
-                <br /><br />
-                Their services include treating undernourished children, providing water and sanitation to impoverished communities, and improving emergency response in places that currently cannot meet basic survival needs. You can read more about their impactful work <a href = "http://www.actionagainsthunger.org/programs" class = "open-link" target = "_blank">here</a>. 
-                <br /><br />
-                If you have suggestions regarding charities you would like us to direct funds to, let us know <a href = "contact.html" class = "open-link">here</a> or by emailing us at <a href="mailto:info@brockwaystreet.com" class = "open-link">info@brockwaystreet.com</a>. 
-            </div>
-    </span>
-</div>
-<br />
-<div class = "col col-sm-10 col-md-8 col-centered">
-    <div class = "hidden-md-up text-center margin-bottom-small">
-        <div class = "about-business-header">Our Nonprofit Partner, Nomi Bobi</div>
-    </div>
-    <div class = "hidden-sm-down">
-        <div class = "thick-line"></div>
-        <div class = "about-business-header">Our Nonprofit Partner, Nomi Bobi</div>
-    </div>
-    <div class = "about-business-body">Nomi Bobi is a 501(c)(3) non-profit organization dedicated to raising money for the purpose of raising awareness for and assisting those suffering from mental illness. In order to do this, they sell a variety of high-quality, colorful owls. 
-        
-        <br />
-        <br />
-        All proceeds from purchasing the items below goes towards supporting both the <a href = "https://www.bbrfoundation.org/" class = "open-link" target = "_blank">Brain & Behavior Research Foundation</a> and the <a href = "https://www.nami.org/" class = "open-link" target = "_blank">National Alliance on Mental Illness</a>.</div>
-     
-       
-    </div>
-    <div class = "col col-11 col-centered">
-        
-        <div class = "row margin-top">
-            <div class = "col col-12 text-center inline">
-                <div id = "owl-title" class = "owl-title">Green Owl</div>
-                <img id = "owl" src = "http://nomibobi.weebly.com/uploads/5/5/1/8/55181199/1468280782.png" class = "animated fadeIn owl"/>
-            </div>
-
-
-        
-        
-            <div class = "col col-sm-10 col-md-9 col-centered text-center">
-                <div id = "green-option" class = "color-option green-option active-border" onclick="selectOwlColor('green')" on-tap = "selectOwlColor('green')"></div>
-                <span class = "push-right-med hidden-sm-down"></span>
-                <div id = "yellow-option" class = "color-option yellow-option" onclick="selectOwlColor('yellow')" on-tap = "selectOwlColor('yellow')"></div>
-                <span class = "push-right-med hidden-sm-down"></span>
-                <div id = "blue-option" class = "color-option blue-option" onclick="selectOwlColor('blue')" on-tap = "selectOwlColor('blue')"></div>
-                <span class = "push-right-med hidden-sm-down"></span>
-                <div id = "orange-option" class = "color-option orange-option" onclick="selectOwlColor('orange')" on-tap = "selectOwlColor('orange')"></div>
-                <span class = "push-right-med hidden-sm-down"></span>
-                <div id = "brown-option" class = "color-option brown-option" onclick="selectOwlColor('brown')" on-tap = "selectOwlColor('brown')"></div>
-                <span class = "push-right-med hidden-sm-down"></span>
-                <div id = "red-option" class = "color-option red-option" onclick="selectOwlColor('red')" on-tap = "selectOwlColor('red')"></div>
-                <span class = "push-right-med hidden-sm-down"></span>
-                <div id = "purple-option" class = "color-option purple-option" onclick="selectOwlColor('purple')" on-tap = "selectOwlColor('purple')"></div>
-            </div>
-        
+        <div class = "col col-10 col-centered about-business-header">About Us</div>
+        <div class = "col col-10 col-centered about-business-body">
+            We strive to provide quality products ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect
+            ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect. 
         </div>
+        <br />
+        <div class = "col col-10 col-centered about-business-header">Commitment to Customer Support</div>
+        <div class = "col col-10 col-centered about-business-body">
+            We strive to provide quality products ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect
+            ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect ect. 
+        </div>
+    </span>
 
-<div class = "col col-sm-10 col-md-8 col-centered form-container">
-    <form action="https://formspree.io/ishan.taparia6769@gmail.com" method="POST">
-  <div class="form-group">
-    
-    <label class = "form-header" for="exampleInputEmail1">Your Name</label>
-    <input type="email" name = "Customer Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
-  </div>
-  <div class = "form-group">
-    <label class = "form-header" for="exampleInputEmail1">Your Phone Number</label>
-    <input type="email" name = "Customer Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
-  </div>
+</div>
+<div class = "flip-text flip-text-size col col-12 text-center margin-top">
+        We make streetwear <div id = "js-rotating" class = "larger-stylized-header stylized-container-header flip-text-size inline">affordable, trendy, accessible, simple, versatile, exciting </div>
+    </div>
 
-  <div class = "form-group">
-    <label class = "form-header" for="exampleInputEmail1">Your Email</label>
-    <input type="email" name = "Customer Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label class = "form-header" for="exampleTextarea">Your Order</label>
-    <textarea class="form-control" name = "Customer Message" id="exampleTextarea" rows="3" placeholder="Specify the number/color of small, medium, and large owls you want here."></textarea>
-  </div>
-  
-  <!--<button type="submit" class="btn btn-primary">Submit</button>-->
-  <span class = "row col col-12 text-center">
-    <div class = "form-button">Submit</div>
-  </span>
-</form>
-</div>
-</div>
-<br />
  <div class = "col col-12 footer text-center">
 
         <span class = "move-up">
@@ -342,13 +279,12 @@
             </span>
         <div class= "col col-12 text-center">
                    <span class = "email-us hidden-sm-down move-down pad-down"> &#169 
-                        Copyright 2017 Brockway Street. All Rights Reserved.</span>
+                        Copyright 2018 Brockway Street. All Rights Reserved.</span>
                    <span class = "email-us hidden-md-up move-up">&#169 
-                        Copyright 2017 Brockway Street. All Rights Reserved.</span>
+                        Copyright 2018 Brockway Street. All Rights Reserved.</span>
         </div>
         </div>
     </div>
-
 
     
 

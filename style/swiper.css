@@ -4,7 +4,7 @@
  * 
  * http://www.idangero.us/swiper/
  * 
- * Copyright 2018, Vladimir Kharlampidi
+ * Copyright 2017, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
  * 
@@ -191,12 +191,11 @@
 }
 /* Bullets */
 .swiper-pagination-bullet {
-  width: 9.5px;
-  height: 9.5px;
+  width: 8px;
+  height: 8px;
   display: inline-block;
   /*border-radius: 100%;*/
   background: #fff;
-  border: 2px solid #000;
   opacity: 0.2;
 
 }

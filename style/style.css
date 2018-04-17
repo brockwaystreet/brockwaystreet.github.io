@@ -58,11 +58,6 @@ a:visited
     color: #fff !important;
 }
 
-.bold
-{
-    font-weight: bold;
-}
-
 .selected-contact-option
 {
     font-size:20px;
@@ -70,25 +65,6 @@ a:visited
     background-color:#000 !important;
 }
 
-.detail-focus-image
-{
-    background-size: cover;
-    height:70vh;
-    width:100%;
-    background-color: red;
-}
-
-.detail-focus1
-{
-    background-position: center center;
-    background-image: url('../images/aiden.jpg');
-}
-
-.detail-focus2
-{
-    background-position: center bottom;
-    background-image: url('../images/closerlook.jpg');
-}
 
 .facebook-color:hover
 {
@@ -240,16 +216,6 @@ a:visited
     cursor: pointer;
 }
 
-.detail-item-shirt
-{
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url("../images/chicago.jpg") !important;
-}
-
 .watches-pic
 {
    /* background-image: url("https://i.pinimg.com/originals/32/d8/dd/32d8ddffc610b77f53871a09636cadb3.jpg");*/
@@ -289,57 +255,6 @@ a:visited
     background-color: blue !important;
 }
 
-.detail-focus-header
-{
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.detail-list
-{
-    display:inline-block;text-align: left;position:relative;left:-20px;
-}
-
-.mobile-item-name
-{
-    background-color:#000;
-    color:#fff;
-    display: inline-block;
-    padding-left:15px;
-    padding-right: 15px;
-    padding-top:10px;
-    padding-bottom: 10px;
-}
-
-.detail-text-mobile
-{
-    font-size:16px;
-}
-.detail-focus-point
-{
-    margin-top:10px !important;
-    padding-top: 11.5px;
-    padding-bottom: 11.5px;
-    font-weight: bold;
-    font-size: 18px;
-    border:4px solid #000;
-
-}
-
-.item-name-price-mobile
-{
-    border: 3px solid #000;
-    margin-top:15px;
-    padding-left: 7px;
-    padding-right:7px;
-    padding-top:7px;
-    padding-bottom: 7px;
-    text-align: center;
-    display: inline-block;
-    font-size: 28px;
-    font-weight: bold;
-}
-
 .divider-image-text
 {
     font-weight: 800;
@@ -347,16 +262,6 @@ a:visited
     letter-spacing: 8px;
     
     color:#fff;
-}
-
-.divider-image-explain
-{
-    font-family: 'Montserrat', sans-serif !important;
-    margin-top:20px;
-    margin-left:auto;
-    margin-right: auto;
-    width:60%;
-    font-size: 18px;
 }
 
 .focus-category-boxes
@@ -654,19 +559,6 @@ button:focus {
     left:20px;
 }
 
-.stylized-container-header-detail
-{
-    height:55px;
-    padding-left:15px;
-    padding-right: 15px;
-    line-height:55px;
-    text-align: center;
-    font-size:21px;
-    font-weight: bold;
-    background-color:#000;
-    color:#fff;
-}
-
 .stylized-container-header
 {
     height:55px;
@@ -942,32 +834,14 @@ button:focus {
    transition: border .3s, background-color .3s;
 }
 
-.italics
-{
-    font-style:italic;
-}
-
 .brockway-image
 {
     background-image:url(../images/aiden.jpg)
 }
 
-.detail-focus-subheader
-{
-    position: relative;
-    top:-6px;
-    font-size: 23px;
-    font-weight: lighter;
-}
-
 .no-top-margin
 {
-    margin-top:0px !important;
-}
-
-.margin-top-tiny
-{
-    margin-top:5px;
+    margin-top:0px;
 }
 
 .margin-top-item
@@ -1032,12 +906,6 @@ button:focus {
     margin-top:-45px;
 }
 
-.move-down-tiny
-{
-    position: relative;
-    top:10px;
-}
-
 .move-down
 {
     position: relative;
@@ -1060,11 +928,6 @@ button:focus {
     margin-bottom:4px;
 }
 
-.rocksalt
-{
-    font-family: 'Rock Salt', cursive;
-}
-
 .site-title
 {
     font-family: 'Rock Salt', cursive;
@@ -1073,11 +936,6 @@ button:focus {
     font-size:32px;
     font-weight:bold;
     color:#000 !important;
-}
-
-.white
-{
-    color:#fff !important;
 }
 
 .site-title-small
@@ -1412,22 +1270,10 @@ button:focus {
     color:#787878;
 }
 
-.pic-description
-{
-    position: relative;
-    top:5px;
-    font-weight: bold;
-    font-size:27px !important;
-}
 
 .animateMarginTop
 {
     transition: margin-top .9s;
-}
-
-.margin-top-larger
-{
-    margin-top:35px;
 }
 
 .margin-top-push
@@ -1459,16 +1305,7 @@ button:focus {
 {
     position: relative;
     top:3px;
-}
 
-.pointer:hover
-{
-    cursor: pointer;
-}
-
-.longer-item
-{
-    width:110px;
 }
 
 .divider
@@ -1523,11 +1360,6 @@ button:focus {
     background-image:url("../images/shirt.svg"); 
 }
 
-.hats-icon
-{
-    background-image: url("../images/cap.svg");
-}
-
 .scroll-img
 {
     position: relative;
@@ -1537,8 +1369,9 @@ button:focus {
 
 .scroll-img:hover
 {
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     cursor: pointer;
+    margin-top:-3px;
 }
 
 .hashtag
@@ -1727,17 +1560,6 @@ button:focus {
 .store-header
 {
     font-size:30px !important;
-}
-
-.no-point
-{
-    pointer-events: none;
-}
-
-.eliminate-padding
-{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
 }
 
 .mailing-list-panel
@@ -2175,16 +1997,10 @@ button:focus {
     font-weight:bold;
 }
 
-/* iphone 5 */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) { 
-    .detail-focus-header
-    {
-        font-size:30px;
-    }
-}
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 .scroll-button
 {
     position: absolute;
@@ -2338,32 +2154,9 @@ a:hover:before {
     font-size:16px;
 }
 
-.add-cart-mobile
-{
-    height:62px;
-    width:177px;
-    line-height: 62px;
-    text-align:center;
-    font-size:23px;
-    color:#000;
-    margin-top:20px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    border: 3px solid #000;
-    transition: color .3s, background-color .3s;
-}
-
-.add-cart-mobile:hover
-{
-    cursor:pointer;
-    background-color:#000;
-    color:#fff;
-}
-
 .footer
 {
-    border-top: 2px solid #000;
+    border-top: 2px solid #808080;
     padding-top:45px;
     padding-bottom:15px;
     background-color:#fff;
@@ -2948,18 +2741,6 @@ and (max-width: 512px)
 @media only screen 
 and (max-width: 767px)
 {
-
-    .divider-image-explain
-    {
-        width:100%;
-        font-size:15px;
-    }
-
-    .detail-hashtag
-    {
-        font-size:24px !important;
-    }
-
     .focus-title
     {
         font-size:43px;
@@ -3125,13 +2906,6 @@ and (min-width: 767px)
 
     
 }
-
-@media (max-width: 767px) {
-    .text-center-mobile
-    {
-        text-align: center;
-    }
- }
 
 @media only screen and (min-width: 1600px) {
     .sale-item
