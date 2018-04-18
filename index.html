@@ -39,7 +39,7 @@
     }
 
     .swiper-container {
-        height:70vh;
+        height:75vh;
         padding-left:0px !important;
         padding-right:0px !important;
     }
@@ -48,7 +48,6 @@
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-        
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -71,9 +70,12 @@
     
     </style>
   </head>
-  <body>
-      <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
-          <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
+  <body onload="checkFirstLoad()">
+      <div id = "mailing-list">
+    <!--  
+    <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
+          
+        <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
           <div class = "inline-block">
             <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
             <div class = "hidden-md-up margin-bottom"></div>
@@ -85,7 +87,9 @@
                     </label>
                 </span>
             </div>
-        </div>
+        
+        </div>-->
+      </div>
     <div id = "marginPush" class = "margin-top-push"></div>
     
     <!-- Mobile Header --> 
@@ -137,7 +141,7 @@
 
 
     <!-- Desktop Header --> 
-    <div class = "hidden-md-down">
+    <div class = "hidden-md-down margin-top">
         <div class = "col col-12 text-center"> 
             <a href = "index.html"><img src = "images/logo.png" class = "header-logo"/></a>
         </div>
@@ -184,7 +188,13 @@
 <!--<div class = "hidden-md-up eliminate-gap"></div>-->
 <div class="col col--12 col-md-11 col-centered swiper-container" onmouseover="enterSlider('home')" onmouseout="exitSlider('home')">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-image-one"></div>
+            <div class="swiper-slide swiper-image-one">
+                <a href = "charity.html" class = "kill-link-style kill-link-style-mod hidden-lg-down">
+                    <div class = "charity-notify-pos">
+                        <span class = "charity-notify">5% of all profits goes to charity</span>
+                    </div>
+                </a>
+            </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
             <div class="swiper-slide">Slide 4</div>
@@ -304,21 +314,24 @@
         <div class = "row">
 
             <div class = "col col-12 col-md-6 text-position-watches no-pad">
-                <div class = " col col-12 focus-category-box text-center watches-pic" onmouseover = "enterFocusCategory('watches')" onmouseout = "exitFocusCategory('watches')">
-                    <span id = "watches-dark" class = "row dark"></span>
-                    <span id = "focus-title-watches" class = "focus-title">
-                    SHOP WATCHES
-                    </span>
+                <a href = "store.html">
+                    <div class = " col col-12 focus-category-box text-center watches-pic" onmouseover = "enterFocusCategory('watches')" onmouseout = "exitFocusCategory('watches')">
+                        <span id = "watches-dark" class = "row dark"></span>
+                        <span id = "focus-title-watches" class = "focus-title">
+                        SHOP WATCHES
+                        </span>
 
-                    <div id = "focus-button-watches" class = "col-centered focus-button-placement focus-button-hidden">
-                        <div class = "focus-category-button">
-                        VIEW CATALOGUE
-                        </div>   
+                        <div id = "focus-button-watches" class = "col-centered focus-button-placement focus-button-hidden">
+                            <div class = "focus-category-button">
+                            VIEW CATALOGUE
+                            </div>   
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class = "col col-12 col-md-6 text-position-sunglasses no-pad-right">
+                <a href = "store.html">
                 <div class = "col col-12 focus-category-box text-center sunglasses-pic" onmouseover = "enterFocusCategory('sunglasses')" onmouseout = "exitFocusCategory('sunglasses')">
                     <span id = "sunglasses-dark" class = "row dark"></span>
                     <span id = "focus-title-sunglasses" class = "focus-title">
@@ -331,6 +344,7 @@
                         </div>   
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -371,11 +385,7 @@
 
         <br />
     <div class = "col col-11 col-centered">
-       <!-- SnapWidget -->
-    <iframe src="https://snapwidget.com/embed/422705" class="snapwidget-widget center-instagram-feed" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:80vw !important; height:255px"></iframe>
-        <!--
-        <iframe src="https://snapwidget.com/embed/422318" class="snapwidget-widget center-instagram-feed" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; height:200px"></iframe>
-        -->
+      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ed232878a7f65c478cdb4242c0185902.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
     </div>
 
     <br />
@@ -475,9 +485,9 @@
             </span>
         <div class= "col col-12 text-center">
                    <span class = "email-us hidden-sm-down move-down pad-down"> &#169 
-                        Copyright 2017 Brockway Street. All Rights Reserved.</span>
+                        Copyright 2018 Brockway Street. All Rights Reserved.</span>
                    <span class = "email-us hidden-md-up move-up">&#169 
-                        Copyright 2017 Brockway Street. All Rights Reserved.</span>
+                        Copyright 2018 Brockway Street. All Rights Reserved.</span>
         </div>
         </div>
     </div>
@@ -491,14 +501,7 @@
     <script src="scripts/swiper.min.js"></script>
 
     <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'samuel_bloodworth',
-        userId: 'samuel_bloodworth',
-        filter: function(image) {
-            return image.tags.indexOf('TAG_NAME') >= 0;
-        }
-    });
-    feed.run();
+    
 </script>
       
 

@@ -8,6 +8,283 @@ function goHome()
     location.href = 'index.html';
 }
 
+/* FINISH THIS FUNCTION */
+function checkFirstLoad()
+{
+    if(localStorage.getItem("openedBefore") != "yes")
+    {
+        var myvar = '<div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">'+
+'          '+
+'        <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>'+
+'          <div class = "inline-block">'+
+'            <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>'+
+'            <div class = "hidden-md-up margin-bottom"></div>'+
+'                <span class="input input--hideo">'+
+'                    <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />'+
+'                    <label class="input__label input__label--hideo" for="input-42">'+
+'                        <button type="submit" style="background:none; border:none;padding:0"><i class="fa fa-fw fa fa-envelope icon icon--hideo"></i></button>'+
+'                        <span class="input__label-content input__label-content--hideo">Email</span>'+
+'                    </label>'+
+'                </span>'+
+'            </div>'+
+'        '+
+'        </div>';
+	
+document.getElementById("mailing-list").innerHTML = myvar;
+        localStorage.setItem("openedBefore", "yes");
+    }
+    else
+    {
+
+        //document.getElementById("mailing-list-panel").style.display = "none";
+    }
+}
+
+function filterItems(itemType)
+{
+    //document.getElementById("filter-items").className = "animated fadeIn";
+    if(itemType == "watches")
+    {
+        var watchVar = '<div class = "animated fadeIn"><div class = "row max-items-width">'+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    '+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                '+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                   '+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                   '+
+'                    <img src = "images/placeholder-item3.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+'        </div>'+
+''+
+'         <div class = "row max-items-width">'+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                    '+
+'                    <img src = "images/placeholder-item2.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                '+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'            '+
+'                    <img src = "images/placeholder-item3.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                '+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+'        </div></div';
+	
+        document.getElementById("filter-items").innerHTML = watchVar;
+    }
+    else if(itemType == "sunglasses")
+    {
+
+var sunglassesVar = '<div class = "animated fadeIn"><div class = "row max-items-width">'+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                    <img src = "images/placeholder-item2.png" class = "store-item-image" />'+
+'                    '+
+'                    <div>'+
+'                        <span class = "store-item-header">Sunglasses</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                '+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                   '+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                   '+
+'                    <img src = "images/placeholder-item3.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+'        </div>'+
+''+
+'         <div class = "row max-items-width">'+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                    '+
+'                    <img src = "images/placeholder-item2.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                '+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'            '+
+'                    <img src = "images/placeholder-item3.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+''+
+'            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">'+
+'                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">'+
+'                '+
+'                    <img src = "images/placeholder-item1.png" class = "store-item-image" />'+
+'                    <div>'+
+'                        <span class = "store-item-header">Item Name</span>'+
+'                        <span class = "underline-sale-item"></span>'+
+'                        <div class = "store-item-price">35$</div>'+
+'                        <div class = "store-item-button">Add to Cart</div>'+
+'                        <div class = "store-item-button">More Info</div>'+
+'                    </div>'+
+'                </a>'+
+'            </div>'+
+'        </div></div>';
+    document.getElementById("filter-items").innerHTML = sunglassesVar;
+    }
+}
+
 function requestItems()
 {
     localStorage.setItem("contactType", "requestItems");
@@ -65,6 +342,7 @@ function exitFocusCategory(focusType)
 
 function assignFormComponents()
 {
+    checkFirstLoad();
     formAddition = document.getElementById("form-addition");
     itemRequestsOption = document.getElementById("item-request-option");
     generalOption = document.getElementById("general-option");
