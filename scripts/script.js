@@ -8,6 +8,11 @@ function goHome()
     location.href = 'index.html';
 }
 
+function testdis()
+{
+    alert('s');
+}
+
 /* FINISH THIS FUNCTION */
 function checkFirstLoad()
 {

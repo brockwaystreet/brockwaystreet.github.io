@@ -12,6 +12,11 @@ body
 
 }
 
+.force-top
+{
+    z-index: 10 !important;
+}
+
 html, body {
     height:100%;
     overflow: scroll;
@@ -75,7 +80,6 @@ a:visited
     background-size: cover;
     height:70vh;
     width:100%;
-    background-color: red;
 }
 
 .detail-focus1
@@ -635,11 +639,11 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:gray;
     background-size:cover;
     background-image: url(../images/chicago.jpg);
     background-position: center bottom;
 }
+
 
 .right-stylized
 {
@@ -1345,6 +1349,117 @@ button:focus {
     */
 }
 
+.whiteshirt-image-one
+{
+    background-image:url(../images/whitebrockwayshirt4.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.whiteshirt-image-two
+{
+    background-image:url(../images/whitebrockwayshirt1.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.whiteshirt-image-three
+{
+    background-image:url(../images/whitebrockwayshirt3.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.whiteshirt-image-four
+{
+    background-image:url(../images/whitebrockwayshirt2.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.whiteshirt-image-five
+{
+    background-image:url(../images/whitebrockwayshirt5.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.whiteshirt-image-six
+{
+    background-image:url(../images/whitebrockwayshirt6.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.whiteshirt-focus-one
+{
+    background-image:url(../images/featuredwhiteshirt.JPG) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.whiteshirt-focus-two
+{
+    background-image:url(../images/whitebrockwayshirt8.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.blackshirt-image-one
+{
+    background-image:url(../images/blackbrockwayshirt1.jpg) !important;
+    background-size: cover !important;
+    background-position: center left !important;
+}
+
+.blackshirt-image-two
+{
+    background-image:url(../images/blackbrockwayshirt2.jpg) !important;
+    background-size: cover !important;
+    background-position: center left !important;
+}
+
+.blackshirt-image-three
+{
+    background-image:url(../images/blackbrockwayshirt3.jpg) !important;
+    background-size: cover !important;
+    background-position: 50px left !important;
+}
+
+.blackshirt-image-four
+{
+    background-image:url(../images/blackbrockwayshirt4.jpg) !important;
+    background-size: cover !important;
+    background-position: 50px left !important;
+}
+
+.blackshirt-image-five
+{
+    background-image:url(../images/blackbrockwayshirt5.jpg) !important;
+    background-size: cover !important;
+    background-position: 50px left !important;
+}
+
+.blackshirt-image-six
+{
+    background-image:url(../images/blackbrockwayshirt6.jpg) !important;
+    background-size: cover !important;
+    background-position: 800px left !important;
+}
+
+.blackshirt-image-seven
+{
+    background-image:url(../images/blackbrockwayshirt7.jpg) !important;
+    background-size: fill !important;
+    background-position: 800px left !important;
+}
+
+
+.featured-numbers
+{
+    background-color:#fff !important;
+    padding:20px;
+}
 
 .swiper-container 
 {

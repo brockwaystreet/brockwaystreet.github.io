@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Brockway Street | Featured Items</title>
+		<meta name="description" content="A slice reveal effect that shows animated slices between image transitions" />
+		<meta name="keywords" content="reveal, slices, effect, animation, css, web development, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="style/base.css" />
+        <link rel="stylesheet" type="text/css" href="style/uncover.css" />
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <link rel="icon" href="images/logo.ico" />
+		<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+        </script>
+        
+        <style>
+
+            *
+            {
+                font-family: 'Montserrat', sans-serif !important;
+            }
+            .pagination
+            {
+                text-align: center;
+                padding-right:20px;
+                padding-top:10px;
+                padding-bottom:10px;
+                background-color:#fff !important;   
+            }
+
+            .store-button
+            {
+                z-index: 10;
+                position: absolute;
+                background-color:#fff;
+                padding:15px;
+                font-size: 20px;
+                color:#000;
+                top:30px;
+                font-weight: bold;
+                right:30px;   
+                transition: background-color .3s, color .3s;
+            }
+
+            .store-button:hover
+            {
+                cursor:pointer;
+                color:#fff;
+                background-color:#000;
+            }
+        </style>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body class="demo-1 loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+			</symbol>
+			
+		</svg>
+		<main>
+            <!-- Change content of this div when new item is selected -->
+            <div id = "featured-item-button">
+                <a href = "detail-page-new.html">
+                    <div class = "store-button">View Item Page</div>
+                </a>
+            </div>
+			<div class="content content--fixed">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" style = "color:#fff !important;" href="index.html" title="Previous Demo">
+							<svg class="icon icon--arrow">
+								<use xlink:href="#icon-arrow"></use>
+							</svg>
+						
+						
+					</div>
+					<h1 class="codrops-header__title" style = "position:relative;left:-15px;color:#fff;">Brockway Street</h1>
+                </a>
+                </header>
+                
+                
+				
+				<nav class="pagination" class = "featured-numbers">
+					<span class="pagination__item">#1</span>
+					<span class="pagination__item">#2</span>
+					<span class="pagination__item">#3</span>
+					<span class="pagination__item">#4</span>
+					<span class="pagination__item">#5</span>
+				</nav>
+			</div>
+			<div class="slides">
+				<div class="slide slide--current">
+                        
+                    <div class="slide__img" style="background-image: url(images/featuredwhiteshirt.jpg);">
+                    </div>
+                    
+				</div>
+				<div class="slide">
+					<div class="slide__img" style="background-image: url(images/featuredblackshirt.jpg);"></div>
+				</div>
+				<div class="slide">
+					<div class="slide__img" style="background-image: url(img/8.jpg);"></div>
+				</div>
+				<div class="slide">
+					<div class="slide__img" style="background-image: url(img/9.jpg);"></div>
+				</div>
+				<div class="slide">
+					<div class="slide__img" style="background-image: url(img/6.jpg);"></div>
+				</div>
+			</div>
+		</main>
+		<script src="scripts/imagesloaded.pkgd.min.js"></script>
+		<script src="scripts/anime.min.js"></script>
+		<script src="scripts/uncover.js"></script>
+		<script src="scripts/demo1.js"></script>
+	</body>
+</html>
