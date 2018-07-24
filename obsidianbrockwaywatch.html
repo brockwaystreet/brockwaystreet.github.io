@@ -71,6 +71,29 @@
   
     
     </style>
+    <script>
+            $(function(){
+              // bind change event to select
+              $('#dynamic_select').on('change', function () {
+                  var url = $(this).val(); // get selected value
+                  if (url) { // require a URL
+                      window.location = url; // redirect
+                  }
+                  return false;
+              });
+            });
+
+            $(function(){
+              // bind change event to select
+              $('#dynamic_select_mobile').on('change', function () {
+                  var url = $(this).val(); // get selected value
+                  if (url) { // require a URL
+                      window.location = url; // redirect
+                  }
+                  return false;
+              });
+            });
+        </script>
   </head>
   <body>
         <body onload="checkFirstLoad()">
@@ -223,16 +246,18 @@
             </div>
                             <span class = "item-detail-header">Color</span>
                             <div>
-                            <select class = "styled-select force-font">
-                                <option>Obsidian (Black/Black)</option>
-                                <option>Classic (Black/White)</option>
-                                <option>Chestnut (Brown/White)</option>
-                                <option>Rose Gold (Pink/Gold)</option>
-                                <option>Lilac (Pink/White)</option>
-                            </select>
+                                    <select id = "dynamic_select" class = "styled-select force-font">
+                                            <option value = "obsidianbrockwaywatch.html">Obsidian (Black/Black)</option>
+                                            <option value = "lilacbrockwaywatch.html">Lilac (Pink/White)</option>
+                                            <option value = "classicbrockwaywatch.html">Classic (Black/White)</option>
+                                            
+                                            <option value = "chestnutbrockwaywatch.html">Chestnut (Brown/White)</option>
+                                            <option value = "rosegoldbrockwaywatch.html">Rose Gold (Pink/Gold)</option>
+                                            
+                                        </select>
                         <div class = "col col-11 col-md-12 margin-top col-centered eliminate-padding">
-                                This shirt is the bomb yo wow. This shirt is the bomb yo wow. This shirt is the bomb yo wow. This shirt is the bomb yo wow. This shirt is the bomb yo wow. Wow this is a placeholder wowow.  Wow this is a placeholder wowow. 
-                                Wow this is a placeholder wowow.  Wow this is a placeholder wowow.  Wow this is a placeholder wowow.   
+                                A simple, clean, and easy to read watch face paired with a comfortable leather strap allows for anyday everyday use. Open your world to reliable, accurate, and stylish timekeeping. 
+                                Comes with a Brockway Street storage case to keep the watch safe when not in use. 
                         </div>
                        
                         <a href="javascript:sraddtocheckout(120956);" class="sr-add">
@@ -243,13 +268,30 @@
 
         <!-- Mobile -->
         <div class = "col col-md-6 col-12 hidden-md-up">
-            <div class = "item-name-header mobile-item-name margin-top-item">Stylish T-Shirt</div>
+            <div class = "item-name-header mobile-item-name margin-top-item">Obsidian Brockway Watch</div>
             <br/>
-            <div class = "item-name-price-mobile margin">$25</div>
-            <div class = "col col-11 text-center bold margin-top detail-text-mobile col-centered eliminate-padding">
-                    This shirt is the bomb yo wow. This shirt is the bomb yo wow. This shirt is the bomb yo wow. This shirt is the bomb yo wow. This shirt is the bomb yo wow. Wow this is a placeholder wowow.  Wow this is a placeholder wowow. 
-                    Wow this is a placeholder wowow.  Wow this is a placeholder wowow.  Wow this is a placeholder wowow.   
-            </div>
+            <div class = "item-name-price-mobile margin">$34.99</div>
+            <br />
+            <span class = "item-detail-header">Color</span>
+                            <div>
+                                    <select id = "dynamic_select_mobile" class = "styled-select force-font">
+                                            <option value = "obsidianbrockwaywatch.html">Obsidian (Black/Black)</option>
+                                            <option value = "lilacbrockwaywatch.html">Lilac (Pink/White)</option>
+                                            <option value = "classicbrockwaywatch.html">Classic (Black/White)</option>
+                                            
+                                            <option value = "chestnutbrockwaywatch.html">Chestnut (Brown/White)</option>
+                                            <option value = "rosegoldbrockwaywatch.html">Rose Gold (Pink/Gold)</option>
+                                            
+                                        </select>
+                        <div class = "col col-11 col-md-12 bold margin-top col-centered eliminate-padding">
+                                A simple, clean, and easy to read watch face paired with a comfortable leather strap allows for anyday everyday use. Open your world to reliable, accurate, and stylish timekeeping. 
+                                Comes with a Brockway Street storage case to keep the watch safe when not in use. 
+                        </div>
+                       
+                        <a href="javascript:sraddtocheckout(120956);" class="sr-add">
+                            <div class = "form-button form-button-largest margin-top-tiny" onClick = "requestItems()" on-tap = "requestItems()">Add to Cart</div>
+                    </a>
+                    </div>
             <a href="javascript:sraddtocheckout(120956);" class="sr-add">
             <div class = "add-cart-mobile no-select">Add to Cart</div>
             </a>
@@ -290,7 +332,7 @@
                 </div>
                 
                 <a href = "store.html" class = "kill-link-style force-top"> 
-                    <div class = "divider-image-button abs-center inline no-select">Tweet It</div>
+                    <div class = "divider-image-button abs-center inline no-select">All Products</div>
                 </a>
                 
             </div>
