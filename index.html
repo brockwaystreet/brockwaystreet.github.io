@@ -39,7 +39,7 @@
     }
 
     .swiper-container {
-        height:75vh;
+        height:83vh;
         padding-left:0px !important;
         padding-right:0px !important;
     }
@@ -74,21 +74,21 @@
       <div id = "mailing-list">
     <!--  
     <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
-          
-        <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
-          <div class = "inline-block">
-            <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
-            <div class = "hidden-md-up margin-bottom"></div>
-                <span class="input input--hideo">
-                    <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />
-                    <label class="input__label input__label--hideo" for="input-42">
-                        <button type="submit" style="background:none; border:none;padding:0"><i class="fa fa-fw fa fa-envelope icon icon--hideo"></i></button>
-                        <span class="input__label-content input__label-content--hideo">Email</span>
-                    </label>
-                </span>
-            </div>
-        
-        </div>-->
+                <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
+                <div class = "inline-block">
+                  <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
+                  <div class = "hidden-md-up margin-bottom"></div>
+                      <span class="input input--hideo">
+                        <form action="https://formspree.io/brockwaystreet@gmail.com" method="POST">
+                          <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />
+                          <label class="input__label input__label--hideo" for="input-42">
+                              <button type="submit" style="background:none; border:none;padding:0"><i class="fa fa-fw fa fa-envelope icon icon--hideo"></i></button>
+                              <span class="input__label-content input__label-content--hideo">Email</span>
+                          </label>
+                        </form>
+                      </span>
+                  </div>
+              </div>-->
       </div>
     <div id = "marginPush" class = "margin-top-push"></div>
     
@@ -188,22 +188,40 @@
 <!--<div class = "hidden-md-up eliminate-gap"></div>-->
 <div class="col col--12 col-md-11 col-centered swiper-container" onmouseover="enterSlider('home')" onmouseout="exitSlider('home')">
         <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-image-one">
-                <a href = "charity.html" class = "kill-link-style kill-link-style-mod hidden-lg-down">
-                    <div class = "charity-notify-pos">
-                        <span class = "charity-notify">5% of all profits goes to charity</span>
-                    </div>
-                </a>
+            <div class="swiper-slide frontpage-striped">
+                
+                <a href = "stripedbrockwayshirt.html">
+               <div class = "swiper-slide-header swiper-slider-white no-select">
+                   Striped Brockway Tee   &#8594;
+               </div>
+            </a>
+
+               <div class = "swiper-slide-price">$19.99</div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide blackshirt-front-focus">
+                   
+                    <a href = "stripedbrockwayshirt.html">
+                   <div class = "swiper-slide-header swiper-slider-white no-select">
+                       Skyline Brockway Tee   &#8594;
+                   </div>
+                </a>
+    
+                   <div class = "swiper-slide-price">$19.99</div>
+           
+    </div>
+            <div class="swiper-slide blackblack-watch-focus-two">
+                   
+                            <a href = "stripedbrockwayshirt.html">
+                           <div class = "swiper-slide-header swiper-slider-white no-select">
+                               Obsidian Brockway Watch   &#8594;
+                           </div>
+                        </a>
+            
+                           <div class = "swiper-slide-price">$34.99</div>
+                   
+            </div>
             <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
+           
         </div>
     
         <div class="swiper-pagination"></div>
@@ -307,7 +325,9 @@
     
         <br />
         <br />
-        <div class = "divider-image-button divider-image-button-top inline">See All &#8594;</div>
+        <a href = "store.html">
+            <div class = "divider-image-button divider-image-button-top inline no-select">See All &#8594;</div>
+        </a>
     </div>
     
     <div class = "col col-11 col-centered">
@@ -315,7 +335,7 @@
 
             <div class = "col col-12 col-md-6 text-position-watches no-pad">
                 <a href = "store.html">
-                    <div class = " col col-12 focus-category-box text-center watches-pic" onmouseover = "enterFocusCategory('watches')" onmouseout = "exitFocusCategory('watches')">
+                    <div class = " col col-12 focus-category-box text-center secret-image" onmouseover = "enterFocusCategory('watches')" onmouseout = "exitFocusCategory('watches')">
                         <span id = "watches-dark" class = "row dark"></span>
                         <span id = "focus-title-watches" class = "focus-title">
                         SHOP WATCHES
@@ -384,9 +404,12 @@
         </div>
 
         <br />
+        
     <div class = "col col-11 col-centered">
       <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/ed232878a7f65c478cdb4242c0185902.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
     </div>
+
+    
 
     <br />
     <br />
@@ -452,35 +475,39 @@
                     Five percent of all profits go to charity! Click here to learn more
             </a>
            <div class = "col hidden-sm-down col-12 col-sm-6 footer-item-container">
-                <span class = "row footer-item-line text-right float-right">
-                    <span class = "table move-up-med">
-                        <div class = "mailing-list-footer">Sign up for discount codes and occasional updates.</div>
-                        <span class="adjust-desktop-mail-input input input--hideo">
-                            <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />
+            <span class = "row footer-item-line text-right float-right">
+                <span class = "table move-up-med">
+                    <div class = "mailing-list-footer">Sign up for discount codes and occasional updates.</div>
+                    <span class="adjust-desktop-mail-input input input--hideo">
+                        <form action="https://formspree.io/brockwaystreet@gmail.com" method="POST">
+                            <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="email" id="input-42" />
                             <label class="input__label input__label--hideo text-center" for="input-42">
                                 <button type="submit" style="background:none; border:none;padding:0"><i class="fa center-icon fa-fw fa fa-envelope icon icon--hideo"></i></button>
                                 <span class="input__label-content input__label-content--hideo">Email</span>
                             </label>
-                        </span>
+                        </form>
                     </span>
                 </span>
-            </div>
+            </span>
+        </div>
 
-             <div class = "col hidden-md-up col-12 col-md-6 footer-item-container">
-                <span class = "row footer-item-line text-center">
-                    <span class = "table move-up">
-                        <div class = "mailing-list-header">Sign up for discount codes and occasional updates.</div>
-                        <br />
-                         <span class="input input--hideo">
-                            <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />
-                            <label class="input__label input__label--hideo" for="input-42">
-                                <button type="submit" style="background:none; border:none;padding:0"><i class="fa fa-fw fa fa-envelope icon icon--hideo"></i></button>
-                                <span class="input__label-content input__label-content--hideo">Email</span>
-                            </label>
-                        </span>
+         <div class = "col hidden-md-up col-12 col-md-6 footer-item-container">
+            <span class = "row footer-item-line text-center">
+                <span class = "table move-up">
+                    <div class = "mailing-list-header">Sign up for discount codes and occasional updates.</div>
+                    <br />
+                     <span class="input input--hideo">
+                         <form action="https://formspree.io/brockwaystreet@gmail.com" method="POST">
+                        <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="email" id="input-42" />
+                        <label class="input__label input__label--hideo" for="input-42">
+                            <button type="submit" style="background:none; border:none;padding:0"><i class="fa fa-fw fa fa-envelope icon icon--hideo"></i></button>
+                            <span class="input__label-content input__label-content--hideo">Email</span>
+                        </label>
+                         </form>
                     </span>
                 </span>
-            </div>
+            </span>
+        </div>
             </span>
             </span>
         <div class= "col col-12 text-center">
@@ -501,18 +528,43 @@
     <script src="scripts/swiper.min.js"></script>
 
     <script type="text/javascript">
+
+    
     
 </script>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+<!-- Shoprocket JavaScript -->
+<script>var $=jQuery.noConflict();</script>
+<script>var JSR=jQuery;</script>
+<script language="javascript" src="https://space.shoprocket.co/frontend/v8/sr.min.js"></script>
+<input type="hidden" name="sr-companyid" id="sr-companyid" value="14165">
+
+<!-- Shoprocket Basket Widget -->
+<div id="sr-basket-widget" class="sr-right"><span class="sr-confirm-amount"></span></div>
+   
       
 
      <script>
     var swiper = new Swiper('.swiper-container', {
+       
+        autoplay: true, 
+        delay: 1000,
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 0,
-        loop: true
+        loop: true,
+
+/*
+        autoplay: {
+    delay: 1000,
+  },
+  */
     });
     
 

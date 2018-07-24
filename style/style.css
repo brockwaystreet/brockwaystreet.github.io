@@ -280,7 +280,12 @@ a:visited
 
 .sunglasses-pic
 {
-    background: url("http://static4.businessinsider.com/image/57d82250077dcc1c008b5789-1080/z.jpg");
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/sunglassesfocus.jpg");
 }
 
 .red
@@ -954,12 +959,12 @@ button:focus {
    border: 2px solid #000 !important;
    font-weight: bold;
    color:#fff;
-   width: 180px;
+   width: 250px;
    background: url(../images/down-arrow.svg) no-repeat right;
    background-size: 20px 20px;
    padding: 10px;
-   background-position: 147px center;
-   font-size: 16px;
+   background-position: 215px center;
+   font-size: 15px;
    line-height: 1;
    border: 0;
    border-radius: 0;
@@ -1349,6 +1354,101 @@ button:focus {
     */
 }
 
+.swiper-slider-black
+{
+    background-color:#000;
+    color:#fff;
+}
+
+.swiper-slider-black:hover
+{
+    background-color:#fff;
+    color:#000;
+}
+
+.swiper-slider-white
+{
+    background-color:#fff;
+    color:#000;
+}
+
+.swiper-slider-white:hover
+{
+    background-color:#000;
+    color:#fff;
+}
+
+.swiper-slide-header
+{
+    position: absolute;
+    top:25px;
+    left:25px;
+    padding:8px 8px 8px 8px;
+    font-size:25px;
+    font-weight: bold;
+    transition: background-color .3s, color .3s;
+    background-color:#fff;
+    color:#000;
+}
+
+.swiper-slide-header:hover{
+    cursor:pointer;
+    background-color:#000; 
+}
+
+.swiper-slide-price
+{
+    position: absolute;
+    top:90px;
+    left:25px;
+    padding:6px 6px 6px 6px;
+    background-color:#fff;
+    color:#000;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.swiper-slide-price:hover
+{
+    cursor:default;
+}
+
+.frontpage-striped
+{
+    background-image:url(../images/frontpage-striped.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+
+.natureboy-image-one
+{
+    background-image:url(../images/nb4.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.natureboy-image-two
+{
+    background-image:url(../images/nb3.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.natureboy-image-three
+{
+    background-image:url(../images/nb2.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.natureboy-focus-one
+{
+    background-image:url(../images/nb1.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
 .whiteshirt-image-one
 {
     background-image:url(../images/whitebrockwayshirt4.jpg) !important;
@@ -1405,6 +1505,13 @@ button:focus {
     background-position: center center !important;
 }
 
+.blackshirt-front-focus
+{
+    background-image:url(../images/blackbrockwayshirtfocus.jpg) !important;
+    background-size: cover !important;
+    background-position: center -30px !important;
+}
+
 .blackshirt-image-one
 {
     background-image:url(../images/blackbrockwayshirt1.jpg) !important;
@@ -1416,14 +1523,14 @@ button:focus {
 {
     background-image:url(../images/blackbrockwayshirt2.jpg) !important;
     background-size: cover !important;
-    background-position: center left !important;
+    background-position: right center !important;
 }
 
 .blackshirt-image-three
 {
     background-image:url(../images/blackbrockwayshirt3.jpg) !important;
     background-size: cover !important;
-    background-position: 50px left !important;
+    background-position: right left !important;
 }
 
 .blackshirt-image-four
@@ -1435,9 +1542,9 @@ button:focus {
 
 .blackshirt-image-five
 {
-    background-image:url(../images/blackbrockwayshirt5.jpg) !important;
+    background-image:url(../images/bwaystreet.jpg) !important;
     background-size: cover !important;
-    background-position: 50px left !important;
+    background-position: left center !important;
 }
 
 .blackshirt-image-six
@@ -1452,6 +1559,223 @@ button:focus {
     background-image:url(../images/blackbrockwayshirt7.jpg) !important;
     background-size: fill !important;
     background-position: 800px left !important;
+}
+
+.secret-image
+{
+    background-image:url(../images/secret.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackblackwatch-image-one
+{
+    background-image:url(../images/blackblackbrockwaywatch1.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackblackwatch-image-two
+{
+    background-image:url(../images/blackblackbrockwaywatch4.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackblackwatch-image-three
+{
+    background-image:url(../images/blackblackbrockwaywatch3.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackblackwatch-image-four
+{
+    background-image:url(../images/blackblackbrockwaywatch2.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackblack-watch-focus-one
+{
+    background-image:url(../images/blackblackbrockwaywatch5.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackblack-watch-focus-two
+{
+    background-image:url(../images/blackblackbrockwaywatch6.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackwhitewatch-image-one
+{
+    background-image:url(../images/blackwhitebrockwaywatch1.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackwhitewatch-image-two
+{
+    background-image:url(../images/blackwhitebrockwaywatch2.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackwhitewatch-image-three
+{
+    background-image:url(../images/blackwhitebrockwaywatch3.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackwhitewatch-image-four
+{
+    background-image:url(../images/blackwhitebrockwaywatch4.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackwhite-watch-focus-one
+{
+    background-image:url(../images/blackwhitebrockwaywatch5.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.blackwhite-watch-focus-two
+{
+    background-image:url(../images/blackwhitebrockwaywatch6.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.brownwhitewatch-image-one
+{
+    background-image:url(../images/brownwhitebrockwaywatch1.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.brownwhitewatch-image-two
+{
+    background-image:url(../images/brownwhitebrockwaywatch4.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.brownwhitewatch-image-three
+{
+    background-image:url(../images/brownwhitebrockwaywatch3.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.brownwhitewatch-image-four
+{
+    background-image:url(../images/brownwhitebrockwaywatch2.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.brownwhite-watch-focus-one
+{
+    background-image:url(../images/brownwhitebrockwaywatch5.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.brownwhite-watch-focus-two
+{
+    background-image:url(../images/brownwhitebrockwaywatch6.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkgoldwatch-image-one
+{
+    background-image:url(../images/pinkgoldbrockwaywatch1.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkgoldwatch-image-two
+{
+    background-image:url(../images/pinkgoldbrockwaywatch4.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkgoldwatch-image-three
+{
+    background-image:url(../images/pinkgoldbrockwaywatch3.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkgoldwatch-image-four
+{
+    background-image:url(../images/pinkgoldbrockwaywatch2.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkgold-watch-focus-one
+{
+    background-image:url(../images/pinkgoldbrockwaywatch5.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkgold-watch-focus-two
+{
+    background-image:url(../images/pinkgoldbrockwaywatch6.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkwhitewatch-image-one
+{
+    background-image:url(../images/pinkwhitebrockwaywatch1.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkwhitewatch-image-two
+{
+    background-image:url(../images/pinkwhitebrockwaywatch4.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkwhitewatch-image-three
+{
+    background-image:url(../images/pinkwhitebrockwaywatch3.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkwhitewatch-image-four
+{
+    background-image:url(../images/pinkwhitebrockwaywatch2.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkwhite-watch-focus-one
+{
+    background-image:url(../images/pinkwhitebrockwaywatch5.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
+.pinkwhite-watch-focus-two
+{
+    background-image:url(../images/pinkwhitebrockwaywatch6.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
 }
 
 
@@ -1547,7 +1871,6 @@ button:focus {
 {
     margin-top:20px;
     background-size: 125px 125px;
-    background-image:url(../images/deliver.svg); 
     background-repeat: no-repeat; 
     background-position: center center;
     display: inline-block;
@@ -1555,6 +1878,21 @@ button:focus {
     height:260px;
     width:260px;
     border-radius: 50%;
+}
+
+.heart
+{
+    background-image:url(../images/heart.svg); 
+}
+
+.delivery
+{
+    background-image:url(../images/shopping-cart-completed.svg); 
+}
+
+.rocket
+{
+    background-image:url(../images/rocket.svg); 
 }
 
 .email-us
@@ -2922,6 +3260,32 @@ a:hover:before {
 }
 
 /* Responsive Code */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+{
+    .swiper-slide-header
+    {
+        top:15px;
+        left:15px;
+        padding:5px 5px 5px 5px;
+        font-size:22.5px;
+        font-weight: bold;
+        transition: background-color .3s, color .3s;
+        background-color:#fff;
+        color:#000;
+    }
+
+    .swiper-slide-price
+    {
+        top:65px;
+        left:15px;
+        padding:5px 5px 5px 5px;
+        font-size:20px;
+        font-weight:bold;
+    }
+}
 
 @media only screen 
 and (min-device-width : 768px) 

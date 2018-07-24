@@ -189,33 +189,45 @@
     </span>
 
 </div>
-<div class = "flip-text flip-text-size col col-12 text-center margin-top">
+<div class = "flip-text flip-text-size col col-12 text-center hidden-md-down margin-top">
         We make streetwear <div id = "js-rotating" class = "larger-stylized-header stylized-container-header flip-text-size inline">affordable, trendy, accessible, simple, versatile, exciting </div>
-    </div>
+</div>
+
+<div class = "flip-text flip-text-size col col-12 text-center hidden-lg-up margin-top">
+        We make streetwear <div class = "larger-stylized-header stylized-container-header flip-text-size inline">affordable</div>
+</div>
 
     <div class = "row col col-11 col-centered margin-top push-down">
         <div class = "col col-12 col-md-4 text-center">
             <div class = "team-member-pad">
             <!--<div class = "team-member"></div>-->
-            <div class = "team-member"></div>
+            <div class = "team-member rocket"></div>
             </div>
-            <div class = "team-member-name">Support Small Business</div>
-            <div class = "team-member-description">Description description description description description description</div>
+            <div class = "team-member-name bold">Next-level quality</div>
+            <div class = "team-member-description">We believe that taking the time to ensure that every product sold is of the best quality is 
+                essential. Our products will keep up with your lifestyle, no matter where your adventures may take you. 
+                
+            </div>
         </div>
     
         <div class = "col col-12 col-md-4 text-center">
-            <div class = "team-member"></div>
-            <div class = "team-member-name">Support Small Business</div>
-            <div class = "team-member-description">Description description description description description description</div>
+            <div class = "team-member heart"></div>
+            <div class = "team-member-name bold">Making a difference</div>
+            <div class = "team-member-description">At Brockway Street, we believe that business can be a great tool for improving people's lives.
+                That's why we have decided to partner with mental health nonprofit nomi-bobi and donate 5% of all profits to charity. Learn <a href = "charity.html" class = "open-link">more here</a>. 
+            </div>
         </div>
     
         <div class = "col col-12 col-md-4 text-center">
-            <div class = "team-member"></div>
-            <div class = "team-member-name">Support Small Business</div>
-            <div class = "team-member-description">Description description description description description description</div>
+            <div class = "team-member delivery"></div>
+            <div class = "team-member-name bold">Fast, reliable shopping</div>
+            <div class = "team-member-description">Every order you place with Brockway Street will be fulfilled quickly and accurately, and 
+                we have taken great care to make the shopping experience as easy as possible. You can get started <a href = "store.html" class = "open-link">right here</a>!
+
+            </div>
         </div>
     </div>
-
+<!--
 <div class = "col col-md-12 hidden-lg-up">
     <div class = "row">
         <div class = "col col-12 col-md-4 margin-top-item">
@@ -236,10 +248,12 @@
         </div>
     </div>
 </div>
+-->
+<!--
 <div class = "col col-md-12 hidden-md-down col-lg-11 center-this col-centered grid-element grid text-center push-down">     
                 <a href = "store.html" class="grid__item center-grid-item">
                         <div class="scroll-img" style="background-image: url(images/aiden.jpg);"></div>
-                        <!--<div class = "scroll-button no-select">View Catalogue</div>-->
+                        <div class = "scroll-button no-select">View Catalogue</div>
                         <div class="grid__item-titlewrap no-point">
                             <h2 class="grid__item-title black">Featured</h2>
                             <p class="grid__item-description black">The best of the best</p>
@@ -267,7 +281,14 @@
                             </div>
                         </div>
 </div>
+-->
 
+<div class = "col col-12  col-centered text-center margin-bottom">
+        <div class = "hashtag">#livebrockway</div>
+    </div>
+
+    
+<!--
 <div class = "col col-12 hidden-md-down col-centered text-center hashtag-pos">
     <div class = "hashtag">#livebrockway</div>
 </div>
@@ -275,6 +296,7 @@
 <div class = "col col-12 hidden-lg-up margin-top col-centered text-center hashtag-pos">
         <div class = "hashtag">#livebrockway</div>
     </div>
+-->
 
 <div class = "col col-12 footer text-center">
 
@@ -341,11 +363,13 @@
                 <span class = "table move-up-med">
                     <div class = "mailing-list-footer">Sign up for discount codes and occasional updates.</div>
                     <span class="adjust-desktop-mail-input input input--hideo">
-                        <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />
-                        <label class="input__label input__label--hideo text-center" for="input-42">
-                            <button type="submit" style="background:none; border:none;padding:0"><i class="fa center-icon fa-fw fa fa-envelope icon icon--hideo"></i></button>
-                            <span class="input__label-content input__label-content--hideo">Email</span>
-                        </label>
+                        <form action="https://formspree.io/brockwaystreet@gmail.com" method="POST">
+                            <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="email" id="input-42" />
+                            <label class="input__label input__label--hideo text-center" for="input-42">
+                                <button type="submit" style="background:none; border:none;padding:0"><i class="fa center-icon fa-fw fa fa-envelope icon icon--hideo"></i></button>
+                                <span class="input__label-content input__label-content--hideo">Email</span>
+                            </label>
+                        </form>
                     </span>
                 </span>
             </span>
@@ -357,11 +381,13 @@
                     <div class = "mailing-list-header">Sign up for discount codes and occasional updates.</div>
                     <br />
                      <span class="input input--hideo">
-                        <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />
+                         <form action="https://formspree.io/brockwaystreet@gmail.com" method="POST">
+                        <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="email" id="input-42" />
                         <label class="input__label input__label--hideo" for="input-42">
                             <button type="submit" style="background:none; border:none;padding:0"><i class="fa fa-fw fa fa-envelope icon icon--hideo"></i></button>
                             <span class="input__label-content input__label-content--hideo">Email</span>
                         </label>
+                         </form>
                     </span>
                 </span>
             </span>
@@ -456,6 +482,8 @@
 	<script src="scripts/uncover.js"></script>
     <script src="scripts/demo3.js"></script>
     <script src = "scripts/morphext.min.js"></script>
+
+    
     <script>
      $("#js-rotating").Morphext({
     // The [in] animation type. Refer to Animate.css for a list of available animations.
@@ -469,5 +497,19 @@
     }
 });
     </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+    <!-- Shoprocket JavaScript -->
+    <script>var $=jQuery.noConflict();</script>
+    <script>var JSR=jQuery;</script>
+    <script language="javascript" src="https://space.shoprocket.co/frontend/v8/sr.min.js"></script>
+    <input type="hidden" name="sr-companyid" id="sr-companyid" value="14165">
+    
+    <!-- Shoprocket Basket Widget -->
+    <div id="sr-basket-widget" class="sr-right"><span class="sr-confirm-amount"></span></div>
+       
 	</body>
 </html>

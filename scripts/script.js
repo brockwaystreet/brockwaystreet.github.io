@@ -13,6 +13,11 @@ function testdis()
     alert('s');
 }
 
+function openStore()
+{
+    alert("store");
+}
+
 /* FINISH THIS FUNCTION */
 function checkFirstLoad()
 {
@@ -25,11 +30,13 @@ function checkFirstLoad()
 '            <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>'+
 '            <div class = "hidden-md-up margin-bottom"></div>'+
 '                <span class="input input--hideo">'+
-'                    <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="text" id="input-42" />'+
+'                <form action="https://formspree.io/brockwaystreet@gmail.com" method="POST">'+
+'                    <input placeholder="Enter Email Here" class="input__field input__field--hideo" name = "User Email" type="email" id="input-42" />'+
 '                    <label class="input__label input__label--hideo" for="input-42">'+
 '                        <button type="submit" style="background:none; border:none;padding:0"><i class="fa fa-fw fa fa-envelope icon icon--hideo"></i></button>'+
 '                        <span class="input__label-content input__label-content--hideo">Email</span>'+
 '                    </label>'+
+'                </form>'+
 '                </span>'+
 '            </div>'+
 '        '+
@@ -365,31 +372,31 @@ function updateForm(selection)
     if(selection == "itemRequests")
     {
         formAddition.innerHTML = '<label class = "form-header" for="exampleInputEmail1">Item Types Requested</label> <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Hats" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Hats</span></label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Shirts" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Shirts</span>\</label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Shorts" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Shorts</span>\</label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Pants" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Pants</span>\</label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Watches" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Watches</span>\</label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Hoodies" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Hoodies</span>\</label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Sweaters" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Sweaters</span>\</label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Accessories" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Accessories</span>\</label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Requested Hat" name="User Requested Other" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Other</span>\</label>';
 
         itemRequestsOption.className = "btn btn-primary outfit-button selected-contact-option cell-button";
@@ -404,16 +411,16 @@ function updateForm(selection)
     else if(selection == "feedback")
     {
         formAddition.innerHTML = '<label class = "form-header" for="exampleInputEmail1">Feedback Type</label> <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Selected Website Suggestion" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Website suggestion</span></label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Selected Issue/Bug Report" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Issue/bug report</span></label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Selected Questions" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Questions</span></label>\
         <br /><label class="form-check-label">\
-        <input class="form-check-input" type="checkbox" value="">\
+        <input name="User Selected Other" class="form-check-input" type="checkbox" value="">\
         <span class = "no-select form-check-option">Other</span></label>\
         <label class="form-check-label">';
 
