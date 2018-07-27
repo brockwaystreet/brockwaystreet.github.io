@@ -1637,6 +1637,12 @@ button:focus {
     background-position: center center !important;
 }
 
+.whiteshirt-image-nine
+{
+    background-image:url(../images/whitebrockwayshirt9.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
 
 .whiteshirt-image-one
 {
@@ -1694,11 +1700,18 @@ button:focus {
     background-position: center center !important;
 }
 
+.blackshirt-image-eight
+{
+    background-image:url(../images/blackbrockwayshirt8.jpg) !important;
+    background-size: cover !important;
+    background-position: center left !important;
+}
+
 .blackshirt-front-focus
 {
     background-image:url(../images/blackbrockwayshirtfocus.jpg) !important;
     background-size: cover !important;
-    background-position: center center !important;
+    background-position: right right !important;
 }
 
 .blackshirt-image-one
@@ -3044,6 +3057,10 @@ a:hover:before {
     font-weight: bold;
     border: 3px solid #000;
     transition: color .3s, background-color .3s;
+}
+
+.dropdown-toggle::after {
+    display:none !important;
 }
 
 .add-cart-mobile:hover
