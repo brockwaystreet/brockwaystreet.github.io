@@ -1413,6 +1413,48 @@ button:focus {
     cursor:default;
 }
 
+.prism-image-one
+{
+    background-image:url(../images/prismsunglasses1.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.prism-image-two
+{
+    background-image:url(../images/prismsunglasses2.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.prism-image-three
+{
+    background-image:url(../images/prismsunglasses3.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.prism-image-four
+{
+    background-image:url(../images/prismsunglasses4.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.prism-image-five
+{
+    background-image:url(../images/prismsunglasses4.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.prism-image-six
+{
+    background-image:url(../images/prismsunglasses6.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
 .frontpage-striped
 {
     background-image:url(../images/frontpage-striped.jpg) !important;
@@ -1476,6 +1518,20 @@ button:focus {
     background-position: center center !important;
 }
 
+.seafoam-image-four
+{
+    background-image:url(../images/seafoamsunglasses4.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.seafoam-image-five
+{
+    background-image:url(../images/seafoamsunglasses5.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
 .classic-image-one
 {
     background-image:url(../images/classicsunglasses1.jpg) !important;
@@ -1511,6 +1567,13 @@ button:focus {
     background-position: center center !important;
 }
 
+.classic-image-six
+{
+    background-image:url(../images/classicsunglasses6.jpg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
 .caramel-image-one
 {
     background-image:url(../images/caramelsunglasses1.JPG) !important;
@@ -1542,6 +1605,13 @@ button:focus {
 .caramel-image-five
 {
     background-image:url(../images/caramelsunglasses5.JPG) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.caramel-image-six
+{
+    background-image:url(../images/caramelsunglasses6.JPG) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
