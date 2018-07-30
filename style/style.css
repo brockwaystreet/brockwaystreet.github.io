@@ -1464,35 +1464,35 @@ button:focus {
 
 .leopard-image-one
 {
-    background-image:url(../images/leopardsunglasses1.JPG) !important;
+    background-image:url(../images/leopardsunglasses1.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .leopard-image-two
 {
-    background-image:url(../images/leopardsunglasses2.JPG) !important;
+    background-image:url(../images/leopardsunglasses2.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .leopard-image-three
 {
-    background-image:url(../images/leopardsunglasses3.JPG) !important;
+    background-image:url(../images/leopardsunglasses3.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .leopard-image-four
 {
-    background-image:url(../images/leopardsunglasses4.JPG) !important;
+    background-image:url(../images/leopardsunglasses4.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .leopard-image-five
 {
-    background-image:url(../images/leopardsunglasses5.JPG) !important;
+    background-image:url(../images/leopardsunglasses5.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
@@ -1548,21 +1548,21 @@ button:focus {
 
 .classic-image-three
 {
-    background-image:url(../images/classicsunglasses3.jpg) !important;
+    background-image:url(../images/classicsunglasses4.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .classic-image-four
 {
-    background-image:url(../images/classicsunglasses4.jpg) !important;
+    background-image:url(../images/classicsunglasses5.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .classic-image-five
 {
-    background-image:url(../images/classicsunglasses5.jpg) !important;
+    background-image:url(../images/classicsunglasses3.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
@@ -1576,42 +1576,42 @@ button:focus {
 
 .caramel-image-one
 {
-    background-image:url(../images/caramelsunglasses1.JPG) !important;
+    background-image:url(../images/caramelsunglasses1.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .caramel-image-two
 {
-    background-image:url(../images/caramelsunglasses2.JPG) !important;
+    background-image:url(../images/caramelsunglasses2.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .caramel-image-three
 {
-    background-image:url(../images/caramelsunglasses3.JPG) !important;
+    background-image:url(../images/caramelsunglasses3.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .caramel-image-four
 {
-    background-image:url(../images/caramelsunglasses4.JPG) !important;
+    background-image:url(../images/caramelsunglasses4.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .caramel-image-five
 {
-    background-image:url(../images/caramelsunglasses5.JPG) !important;
+    background-image:url(../images/caramelsunglasses5.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
 
 .caramel-image-six
 {
-    background-image:url(../images/caramelsunglasses6.JPG) !important;
+    background-image:url(../images/caramelsunglasses6.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
@@ -1826,6 +1826,13 @@ button:focus {
     background-position: 800px left !important;
 }
 
+.hand
+{
+    background-image:url(../images/hand.jpg) !important;
+    background-size: fill !important;
+    background-position: left center !important;
+}
+
 .blackshirt-image-seven
 {
     background-image:url(../images/blackbrockwayshirt7.jpg) !important;
@@ -1966,6 +1973,13 @@ button:focus {
     background-position: center center !important;
 }
 
+.josh-pic
+{
+    background-image:url(../images/joshpic.jpg) !important;
+    background-size: fill !important;
+    background-position: center center !important;
+}
+
 .pinkgoldwatch-image-one
 {
     background-image:url(../images/pinkgoldbrockwaywatch1.jpg) !important;
@@ -2005,7 +2019,7 @@ button:focus {
 {
     background-image:url(../images/pinkgoldbrockwaywatch6.jpg) !important;
     background-size: fill !important;
-    background-position: center center !important;
+    background-position: top bottom !important;
 }
 
 .pinkwhitewatch-image-one
@@ -2019,14 +2033,14 @@ button:focus {
 {
     background-image:url(../images/pinkwhitebrockwaywatch4.jpg) !important;
     background-size: fill !important;
-    background-position: center center !important;
+    background-position: center top !important;
 }
 
 .pinkwhitewatch-image-three
 {
     background-image:url(../images/pinkwhitebrockwaywatch3.jpg) !important;
     background-size: fill !important;
-    background-position: center center !important;
+    background-position: center top !important;
 }
 
 .pinkwhitewatch-image-four
