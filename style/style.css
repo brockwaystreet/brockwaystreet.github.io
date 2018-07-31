@@ -640,7 +640,7 @@ button:focus {
 
 .divider-image
 {
-    height:68vh;
+    height:75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3740,6 +3740,30 @@ and (min-width: 544px)
     {
         font-size:15.5px;  
     }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .sale-item-name
+    {
+        font-size:12px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    .swiper-slide-header
+    {
+        font-size:18px;
+    }
+    
+    .swiper-slide-price
+    {
+        font-size:18px;
+    } 
 }
 
 @media only screen 
