@@ -4,12 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Brockway Street | Partners</title>
+    <title>Brockway Street | Store</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
     <script src="https://use.fontawesome.com/092bc38e87.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -33,10 +34,10 @@
     
     </style>
   </head>
-  <body onLoad = "assignFormComponents()">
-        <div id = "mailing-list">
-                <!--
-           <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
+  <body onload="checkFirstLoad()">
+      <div id = "mailing-list">
+          <!--
+     <div id = "mailing-list-panel" class = "col col-12 mailing-list-panel text-center animated fadeInDown">
                 <span id = "closeButton" class = "close" onClick = "closeMailingList()" on-tap="closeMailingList()">x</span>
                 <div class = "inline-block">
                   <span class = "mailing-list-header">SIGN UP FOR 10% OFF AND UPDATES</span>
@@ -52,8 +53,8 @@
                       </span>
                   </div>
               </div>
-          -->
-            </div>
+    -->
+      </div>
     <div id = "marginPush" class = "margin-top-push"></div>
     
     <!-- Mobile Header --> 
@@ -149,106 +150,140 @@
     </div>
     </nav>
 </div>
-<div class = "hidden-md-up eliminate-gap"></div>
-<div class = "col col-12 col-md-11 col-centered about-business">
-    <span class = "hidden-sm-down">
-        <div class = "col col-10 col-centered">
-            <div class = "thick-line"></div>
-            <div class = "about-business-header">Our policy towards partnerships</div>
-            <div class = "about-business-body">
-                We believe that collaborating with others is the basis for long-term success and growth. The following two organizations offer great quality products and have helped 
-                support us since the beginning. 
-                <br />
-                <br />
-                If you or your organization is interested in collaborating with us, let us know <a href = "contact.html" class = "open-link">here</a> or by emailing us at <a href="mailto:info@brockwaystreet.com" class = "open-link">info@brockwaystreet.com</a>.
-            </div>
-        </div>
-        <br />
-        <div class = "col col-10 col-centered">
-                <div class = "thick-line"></div>
-                    <div class = "about-business-header">Artist Partnerships</div>
-                    <div class = "about-business-body">
-                     Brockway Street loves to work with talented artists when it comes to developing our new products. 
-                     Collaboration provides a mutually beneficial relationship — we advertise, promote, and take great pictures
-                     of selected designs in order to ensure that people get to see your amazing work. 
-                     <br /><br />
-                     Our first collaboration is with Nature Boy, a group of local Saint Paul artists. They came up with a fantastic shirt design 
-                     that can be <a href = "natureboytee.html" class = "open-link">purchased here</a>. You can follow them on <a href = "https://www.instagram.com/parkourdaddy/" target = "_open" class = "open-link">Instagram</a> to stay up
-                     to date with all their new work. 
+    <div class = "hidden-md-up eliminate-gap"></div>
 
-                     <br /><br />
-                     We love clothes, but we also love music! Check out some of these <a href = "https://open.spotify.com/artist/6qh8qX54m5kKKm20igjeRL" class = "open-link" target = "_open">bumping beats</a> by one of our co-founders, Eugene!
-                     
-                    </div>
-                </div>
-    </span>
-
-     <span class = "hidden-md-up text-center">
-        <div class = "col col-10 col-centered about-business-header">Our policy towards partnerships</div>
-        <div class = "about-business-body">
-                We believe that collaborating with others is the basis for long-term success and growth. The following two organizations offer great quality products and have helped 
-                support us since the beginning. 
-                <br />
-                <br />
-                If you or your organization is interested in collaborating with us, let us know <a href = "contact.html" class = "open-link">here</a> or by emailing us at <a href="mailto:info@brockwaystreet.com" class = "open-link">info@brockwaystreet.com</a>.
-            </div>
-            <br />
-        <div class = "col col-10 col-centered">
-                
-                    <div class = "about-business-header">Artist Partnerships</div>
-                    <div class = "about-business-body">
-                     Brockway Street loves to work with talented artists when it comes to developing our new products. 
-                     Collaboration provides a mutually beneficial relationship — we advertise, promote, and take great pictures
-                     of selected designs in order to ensure that people get to see your amazing work. 
-                     <br /><br />
-                     Our first collaboration is with Nature Boy, a group of local Saint Paul artists. They came up with a fantastic shirt design 
-                     that can be <a href = "natureboytee.html" class = "open-link">purchased here</a>. You can follow them on <a href = "https://www.instagram.com/parkourdaddy/" target = "_open" class = "open-link">Instagram</a> to stay up
-                     to date with all their new work. 
-
-                     <br /><br />
-                     We love clothes, but we also love music! Check out some of these <a href = "https://open.spotify.com/artist/6qh8qX54m5kKKm20igjeRL" class = "open-link" target = "_open">bumping beats</a> by one of our co-founders, Eugene!
-                     
-                    </div>
-                </div>
-    </span>
-</div>
-<br />
-
-<div class = "col col-11 col-centered stylized-container margin-top-huge text-center">
-        <div class = "absolute hidden-sm-down">
-            <div class = "position-stylized-container-header stylized-container-header stylized-big float-left left-stylized">OUR PARTNERS</div>
-        </div>
-
-        <div class = "hidden-md-up new-items-down">
-            <div class = "position-stylized-container-header stylized-container-header stylized-big abs-center">OUR PARTNERS</div>
-        </div>
-        <div class= "row margin-top">
-            <div class = "col col-12 col-md-6 text-center inline margin-top">
-                <a href ="https://www.aviantapparel.com/" target = "_blank"><div class = "partner aviant">Aviant Apparel</div></a>
-                <div class = "partner-description"><a href ="https://www.aviantapparel.com/" target = "_blank" class = "open-link">Aviant Apparel</a> is a premium clothing line specializing in headgear and tees.</div>
-            </div>
-            
-     
-        
-            <div class = "col col-12 col-md-6 text-center inline margin-top">
-                <a href = "http://nomibobi.com/" target = "_blank"><div class = "partner nomi">Nomi Bobi</div></a>
-                <div class = "partner-description"><a href = "http://nomibobi.weebly.com/" target = "_blank">Nomi Bobi</a> is a 501(c)(3) non-profit organization dedicated to raising money for the purpose of raising awareness for and assisting those suffering from mental illness. You can learn more <a href = "charity.html" class = "open-link">here</a>.</div>
-            </div>
+    <div class = "col col-11 col-centered divider-image sunglasses-cover text-center margin-top-large">
+            <div class = "divider-image-text inline">OUR SUNGLASSES</div>
             
         </div>
 
-    
+    <div class = "col col-11 col-centered margin-top-large">
+        <div class = "row text-center">
+            <div class = "center-rel">
+                <span id = "item-type-header">
+                    <div class = "about-business-header store-header">Our Sunglasses</div>
+                </span>
+            </div>
+        </div>
 
-        
-        <br />
-        <br />
-        <a href="mailto:info@brockwaystreet.com?subject=Interest in collaboration">
-            <div class = "divider-image-button divider-image-button-top divider-image-button-big collab-text inline">Collaborate with Us &#8594;</div>
-        </a>
     </div>
-<br />
-<br />
-<div class = "col col-12 footer text-center">
+        
+        <span id = "filter-items">
+         
+              <div class = "row container max-items-width eliminate-padding">
+                    <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                            <a href = "caramelbrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                <div class = "store-item-image caramel-image-three"></div>
+                                <br />
+                                <span class = "store-item-header">Caramel Brockway Sunglasses</span>
+                                <span class = "underline-sale-item"></span>
+                                <div class = "store-item-price">$24.99</div>
+                                <a href="javascript:sraddtocheckout(121197);" class="sr-add kill-link-style">
+                                        <div class = "store-item-button">Add to Cart</div>
+                                        </a>
+                                        <a href="caramelbrockwaysunglasses.html">
+                                        <div class = "store-item-button">More Info</div>
+                                        </a>
+                            </a>
+                          </div>
+                    <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                            <a href = "classicbrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                <div class = "store-item-image classic-image-three"></div>
+                                <br />
+                                <span class = "store-item-header">Classic Brockway Sunglasses</span>
+                                <span class = "underline-sale-item"></span>
+                                <div class = "store-item-price">$24.99</div>
+                                <a href="javascript:sraddtocheckout(121198);" class="sr-add kill-link-style">
+                                        <div class = "store-item-button">Add to Cart</div>
+                                        </a>
+                                        <a href="classicbrockwaysunglasses.html">
+                                        <div class = "store-item-button">More Info</div>
+                                        </a>
+                            </a>
+                          </div>
+                          
+                              <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                    <a href = "aquabrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                        <div class = "store-item-image aqua-image-three"></div>
+                                        <br />
+                                        <span class = "store-item-header">Aqua Brockway Sunglasses</span>
+                                        <span class = "underline-sale-item"></span>
+                                        <div class = "store-item-price">$24.99</div>
+                                        <a href="javascript:sraddtocheckout(121196);" class="sr-add kill-link-style">
+                                                <div class = "store-item-button">Add to Cart</div>
+                                                </a>
+                                                <a href="aquabrockwaysunglasses.html">
+                                                <div class = "store-item-button">More Info</div>
+                                                </a>
+                                    </a>
+                                  </div>
+                                  <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                        <a href = "seafoambrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                            <div class = "store-item-image seafoam-image-three"></div>
+                                            <br />
+                                            <span class = "store-item-header">Seafoam Brockway Sunglasses</span>
+                                            <span class = "underline-sale-item"></span>
+                                            <div class = "store-item-price">$24.99</div>
+                                            <a href="javascript:sraddtocheckout(121199);" class="sr-add kill-link-style">
+                                                    <div class = "store-item-button">Add to Cart</div>
+                                                    </a>
+                                                    <a href="seafoambrockwaysunglasses.html">
+                                                    <div class = "store-item-button">More Info</div>
+                                                    </a>
+                                        </a>
+                                      </div>
+
+                                      <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                            <a href = "leopardbrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                                <div class = "store-item-image leopard-image-five"></div>
+                                                <br />
+                                                <span class = "store-item-header">Leopard Brockway Sunglasses</span>
+                                                <span class = "underline-sale-item"></span>
+                                                <div class = "store-item-price">$24.99</div>
+                                                <a href="javascript:sraddtocheckout(121200);" class="sr-add kill-link-style">
+                                                        <div class = "store-item-button">Add to Cart</div>
+                                                        </a>
+                                                        <a href="leopardbrockwaysunglasses.html">
+                                                        <div class = "store-item-button">More Info</div>
+                                                        </a>
+                                            </a>
+                                          </div>
+
+                                          <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                                <a href = "prismbrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                                    <div class = "store-item-image prism-image-one"></div>
+                                                    <br />
+                                                    <span class = "store-item-header">Prism Brockway Sunglasses</span>
+                                                    <span class = "underline-sale-item"></span>
+                                                    <div class = "store-item-price">$24.99</div>
+                                                    <a href="javascript:sraddtocheckout(121235);" class="sr-add kill-link-style">
+                                                            <div class = "store-item-button">Add to Cart</div>
+                                                            </a>
+                                                            <a href="prismbrockwaysunglasses.html">
+                                                            <div class = "store-item-button">More Info</div>
+                                                            </a>
+                                                </a>
+                                              </div>
+          
+                  </div>
+            
+    </span>
+
+
+     <div class = "col col-8 col-centered divider margin-top">
+    <div class = "col col-12 col-centered margin-top text-center">
+        <div class = "about-business-header">View all of our products</div>
+        <span class = "row text-center">
+            <a class = "kill-link-style center-rel" href = "store.html ">
+                <div class = "form-button form-button-largest margin-top">Enter Store</div>
+            </a>
+        </span>
+        <br />
+        </div>
+    </div>
+    <br />
+
+ <div class = "col col-12 footer text-center">
 
         <span class = "move-up">
         <div class = "row pad-row">
@@ -352,7 +387,6 @@
         </div>
         </div>
     </div>
-
 
     
 

@@ -163,22 +163,24 @@
         </div>
 
         <div class = "row max-large-category-width">
-            <div class = "col col-12 col-md-3 text-center">
+            <div class = "col col-12 col-md-4 text-center">
                 <div class = "store-option watches-icon" onclick = "filterItems('watches')" on-tap = "filterStore('watches')">Watches</div>
             </div>
 
-            <div class = "col col-12 col-md-3 text-center">
+            <div class = "col col-12 col-md-4 text-center">
                 <div class = "store-option sunglasses-icon" onclick = "filterItems('sunglasses')" on-tap="filterItems('sunglasses')">Sunglasses</div>
             </div>
 
-            <div class = "col col-12 col-md-3 text-center">
-                <div class = "store-option shirts-icon">Shirts</div>
+            <div class = "col col-12 col-md-4 text-center">
+                <div class = "store-option shirts-icon" onclick = "filterItems('shirts')" on-tap="filterItems('shirts')">Shirts</div>
             </div>
+            <!--
             <div class = "col col-12 col-md-3 text-center">
                 <div class = "store-option hats-icon">Hats</div>
             </div>
+        -->
             <div class = "col col-12 text-center margin-top">
-                <div class = "form-button form-button-largest" onClick = "requestItems()" on-tap = "requestItems()">View All</div>
+                <div class = "form-button form-button-largest" onClick = "filterItems('all')" on-tap = "filterItems('all')">View All</div>
             </div>
         </div>
     </div>
@@ -188,130 +190,243 @@
     <div class = "col col-11 col-centered margin-top-large">
         <div class = "row text-center">
             <div class = "center-rel">
-                <div class = "about-business-header store-header">All Items</div>
+                <span id = "item-type-header">
+                    <div class = "about-business-header store-header">All Items</div>
+                </span>
             </div>
         </div>
 
-        </div>
-        <div id = "filter-items">
-        <div class = "row max-items-width">
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                    <img src = "images/whitebrockwayshirt1.jpg" class = "store-item-image" />
-                    
-                    <div>
-                        <span class = "store-item-header">Striped Brockway Tee</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                
-                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
-                    <div>
-                        <span class = "store-item-header">Itesm Name</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                   
-                    <img src = "images/placeholder-item1.png" class = "store-item-image" onclick="testdis()" oncontextmenu="testdis()"/>
-                    <div>
-                        <span class = "store-item-header">Itsem Name</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                   
-                    <img src = "images/placeholder-item3.png" class = "store-item-image" />
-                    <div>
-                        <span class = "store-item-header">Item Name</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-         <div class = "row max-items-width">
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                    
-                    <img src = "images/placeholder-item2.png" class = "store-item-image" />
-                    <div>
-                        <span class = "store-item-header">Item Name</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                
-                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
-                    <div>
-                        <span class = "store-item-header">Item Name</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-            
-                    <img src = "images/placeholder-item3.png" class = "store-item-image" />
-                    <div>
-                        <span class = "store-item-header">Item Name</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
-                <a href = "index.html" class = "kill-link-style kill-link-style-mod inline">
-                
-                    <img src = "images/placeholder-item1.png" class = "store-item-image" />
-                    <div>
-                        <span class = "store-item-header">Item Name</span>
-                        <span class = "underline-sale-item"></span>
-                        <div class = "store-item-price">35$</div>
-                        <div class = "store-item-button">Add to Cart</div>
-                        <div class = "store-item-button">More Info</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        </div>
-            
     </div>
+        
+        <span id = "filter-items">
+         
+      <div class = "row container max-items-width eliminate-padding">
+          <div class = "col col-12 col-sm-6 col-md-3 text-center margin-top">
+            <a href = "stripedbrockwayshirt.html" class = "kill-link-style kill-link-style-mod">
+                <div class = "store-item-image whiteshirt-focus-two"></div>
+                <br />
+                <span class = "store-item-header">Striped Brockway Tee</span>
+                <span class = "underline-sale-item"></span>
+                <div class = "store-item-price">$19.99</div>
+                        <a href="javascript:sraddtocheckout(120955);" class="sr-add kill-link-style">
+                        <div class = "store-item-button">Add to Cart</div>
+                        </a>
+                        <a href="stripedbrockwayshirt.html">
+                        <div class = "store-item-button">More Info</div>
+                        </a>
+            </a>
+          </div>
+          <div class = "col col-12 col-sm-6 col-md-3 col-md-3 text-center margin-top">
+                <a href = "skylinebrockwayshirt.html" class = "kill-link-style kill-link-style-mod">
+                    <div class = "store-item-image blackshirt-image-five"></div>
+                    <br />
+                    <span class = "store-item-header">Skyline Brockway Tee</span>
+                    <span class = "underline-sale-item"></span>
+                    <div class = "store-item-price">$19.99</div>
+                    <a href="javascript:sraddtocheckout(120957);" class="sr-add kill-link-style">
+                            <div class = "store-item-button">Add to Cart</div>
+                            </a>
+                            <a href="skylinebrockwayshirt.html">
+                            <div class = "store-item-button">More Info</div>
+                            </a>
+                </a>
+              </div>
+              <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                    <a href = "natureboytee.html" class = "kill-link-style kill-link-style-mod">
+                        <div class = "store-item-image natureboy-image-four"></div>
+                        <br />
+                        <span class = "store-item-header">Nature Boy Tee</span>
+                        <span class = "underline-sale-item"></span>
+                        <div class = "store-item-price">$19.99</div>
+                        <a href="javascript:sraddtocheckout(120966);" class="sr-add kill-link-style">
+                                <div class = "store-item-button">Add to Cart</div>
+                                </a>
+                                <a href="natureboytee.html">
+                                <div class = "store-item-button">More Info</div>
+                                </a>
+                    </a>
+                  </div>
+                  <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                        <a href = "obsidianbrockwaywatch.html" class = "kill-link-style kill-link-style-mod">
+                            <div class = "store-item-image blackblackwatch-image-one"></div>
+                            <br />
+                            <span class = "store-item-header">Obsidian Brockway Watch</span>
+                            <span class = "underline-sale-item"></span>
+                            <div class = "store-item-price">$34.99</div>
+                            <a href="javascript:sraddtocheckout(120956);" class="sr-add kill-link-style">
+                                    <div class = "store-item-button">Add to Cart</div>
+                                    </a>
+                                    <a href="obsidianbrockwaywatch.html">
+                                    <div class = "store-item-button">More Info</div>
+                                    </a>
+                        </a>
+                      </div>
+
+        </div>
+        <div class = "row container max-items-width eliminate-padding">
+                <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                        <a href = "classicbrockwaywatch.html" class = "kill-link-style kill-link-style-mod">
+                            <div class = "store-item-image blackwhitewatch-image-one"></div>
+                            <br />
+                            <span class = "store-item-header">Classic Brockway Watch</span>
+                            <span class = "underline-sale-item"></span>
+                            <div class = "store-item-price">$34.99</div>
+                            <a href="javascript:sraddtocheckout(120967);" class="sr-add kill-link-style">
+                                    <div class = "store-item-button">Add to Cart</div>
+                                    </a>
+                                    <a href="classicbrockwaywatch.html">
+                                    <div class = "store-item-button">More Info</div>
+                                    </a>
+                        </a>
+                      </div>
+                      <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                            <a href = "chestnutbrockwaywatch.html" class = "kill-link-style kill-link-style-mod">
+                                <div class = "store-item-image brownwhitewatch-image-four"></div>
+                                <br />
+                                <span class = "store-item-header">Chestnut Brockway Watch</span>
+                                <span class = "underline-sale-item"></span>
+                                <div class = "store-item-price">$34.99</div>
+                                <a href="javascript:sraddtocheckout(120972);" class="sr-add kill-link-style">
+                                        <div class = "store-item-button">Add to Cart</div>
+                                        </a>
+                                        <a href="chestnutbrockwaywatch.html">
+                                        <div class = "store-item-button">More Info</div>
+                                        </a>
+                            </a>
+                          </div>
+                      <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                            <a href = "lilacbrockwaywatch.html" class = "kill-link-style kill-link-style-mod">
+                                <div class = "store-item-image pinkwhitewatch-image-three"></div>
+                                <br />
+                                <span class = "store-item-header">Lilac Brockway Watch</span>
+                                <span class = "underline-sale-item"></span>
+                                <div class = "store-item-price">$34.99</div>
+                                <a href="javascript:sraddtocheckout(121012);" class="sr-add kill-link-style">
+                                        <div class = "store-item-button">Add to Cart</div>
+                                        </a>
+                                        <a href="lilacbrockwaywatch.html">
+                                        <div class = "store-item-button">More Info</div>
+                                        </a>
+                            </a>
+                          </div>
+                          
+                              <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                    <a href = "rosegoldbrockwaywatch.html" class = "kill-link-style kill-link-style-mod">
+                                        <div class = "store-item-image pinkgoldwatch-image-two"></div>
+                                        <br />
+                                        <span class = "store-item-header">Rose Gold Brockway Watch</span>
+                                        <span class = "underline-sale-item"></span>
+                                        <div class = "store-item-price">$34.99</div>
+                                        <a href="javascript:sraddtocheckout(121013);" class="sr-add kill-link-style">
+                                                <div class = "store-item-button">Add to Cart</div>
+                                                </a>
+                                                <a href="rosegoldbrockwaywatch.html">
+                                                <div class = "store-item-button">More Info</div>
+                                                </a>
+                                    </a>
+                                  </div>
+      
+              </div>
+
+              <div class = "row container max-items-width eliminate-padding">
+                    <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                            <a href = "caramelbrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                <div class = "store-item-image caramel-image-three"></div>
+                                <br />
+                                <span class = "store-item-header">Caramel Brockway Sunglasses</span>
+                                <span class = "underline-sale-item"></span>
+                                <div class = "store-item-price">$24.99</div>
+                                <a href="javascript:sraddtocheckout(121197);" class="sr-add kill-link-style">
+                                        <div class = "store-item-button">Add to Cart</div>
+                                        </a>
+                                        <a href="caramelbrockwaysunglasses.html">
+                                        <div class = "store-item-button">More Info</div>
+                                        </a>
+                            </a>
+                          </div>
+                    <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                            <a href = "classicbrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                <div class = "store-item-image classic-image-three"></div>
+                                <br />
+                                <span class = "store-item-header">Classic Brockway Sunglasses</span>
+                                <span class = "underline-sale-item"></span>
+                                <div class = "store-item-price">$24.99</div>
+                                <a href="javascript:sraddtocheckout(121198);" class="sr-add kill-link-style">
+                                        <div class = "store-item-button">Add to Cart</div>
+                                        </a>
+                                        <a href="classicbrockwaysunglasses.html">
+                                        <div class = "store-item-button">More Info</div>
+                                        </a>
+                            </a>
+                          </div>
+                          
+                              <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                    <a href = "aquabrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                        <div class = "store-item-image aqua-image-three"></div>
+                                        <br />
+                                        <span class = "store-item-header">Aqua Brockway Sunglasses</span>
+                                        <span class = "underline-sale-item"></span>
+                                        <div class = "store-item-price">$24.99</div>
+                                        <a href="javascript:sraddtocheckout(121196);" class="sr-add kill-link-style">
+                                                <div class = "store-item-button">Add to Cart</div>
+                                                </a>
+                                                <a href="aquabrockwaysunglasses.html">
+                                                <div class = "store-item-button">More Info</div>
+                                                </a>
+                                    </a>
+                                  </div>
+                                  <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                        <a href = "seafoambrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                            <div class = "store-item-image seafoam-image-three"></div>
+                                            <br />
+                                            <span class = "store-item-header">Seafoam Brockway Sunglasses</span>
+                                            <span class = "underline-sale-item"></span>
+                                            <div class = "store-item-price">$24.99</div>
+                                            <a href="javascript:sraddtocheckout(121199);" class="sr-add kill-link-style">
+                                                    <div class = "store-item-button">Add to Cart</div>
+                                                    </a>
+                                                    <a href="seafoambrockwaysunglasses.html">
+                                                    <div class = "store-item-button">More Info</div>
+                                                    </a>
+                                        </a>
+                                      </div>
+
+                                      <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                            <a href = "leopardbrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                                <div class = "store-item-image leopard-image-five"></div>
+                                                <br />
+                                                <span class = "store-item-header">Leopard Brockway Sunglasses</span>
+                                                <span class = "underline-sale-item"></span>
+                                                <div class = "store-item-price">$24.99</div>
+                                                <a href="javascript:sraddtocheckout(121200);" class="sr-add kill-link-style">
+                                                        <div class = "store-item-button">Add to Cart</div>
+                                                        </a>
+                                                        <a href="leopardbrockwaysunglasses.html">
+                                                        <div class = "store-item-button">More Info</div>
+                                                        </a>
+                                            </a>
+                                          </div>
+
+                                          <div class = "col col-12 col-sm-6 col-md-3 col-md-3 margin-top text-center">
+                                                <a href = "prismbrockwaysunglasses.html" class = "kill-link-style kill-link-style-mod">
+                                                    <div class = "store-item-image prism-image-one"></div>
+                                                    <br />
+                                                    <span class = "store-item-header">Prism Brockway Sunglasses</span>
+                                                    <span class = "underline-sale-item"></span>
+                                                    <div class = "store-item-price">$24.99</div>
+                                                    <a href="javascript:sraddtocheckout(121235);" class="sr-add kill-link-style">
+                                                            <div class = "store-item-button">Add to Cart</div>
+                                                            </a>
+                                                            <a href="prismbrockwaysunglasses.html">
+                                                            <div class = "store-item-button">More Info</div>
+                                                            </a>
+                                                </a>
+                                              </div>
+          
+                  </div>
+            
+    </span>
+
 
      <div class = "col col-8 col-centered divider margin-top">
     <div class = "col col-12 col-centered margin-top">
