@@ -103,7 +103,7 @@ a:visited
 .mail-color:hover
 {
     transition: color .2s;
-    color:#717D7E;
+    color:#28B463;
 }
 
 .twitter-color:hover
@@ -708,6 +708,24 @@ button:focus {
     font-weight: bold;
     background-color:#000;
     color:#fff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000 !important;
+    opacity: 1; /* Firefox */
+}
+
+.bold-form
+{
+    color:#000 !important;;
+    font-weight: bold;
+    border-radius: 0px;
+    border: 2px solid #000;
+}
+
+.bold-form:focus
+{
+    border: 2px solid #000 !important;
 }
 
 .stylized-big
